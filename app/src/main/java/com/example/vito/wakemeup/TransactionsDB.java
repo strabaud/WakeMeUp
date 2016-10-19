@@ -74,12 +74,12 @@ public class TransactionsDB {
     }
 
     public Hobbies getHobbiesById(int id){
-        //Récupère dans un Cursor les valeur correspondant à un livre contenu dans la BDD (ici on sélectionne le livre grâce à son titre)
+        //Récupère dans un Cursor les valeur correspondant
         Cursor c = db.query(TABLE_ACTIVITIES, new String[] {COL_ID, COL_ACTIVITY1, COL_ACTIVITY2, COL_ACTIVITY3}, COL_ID + " LIKE \"" + id +"\"", null, null, null, null);
         return cursorToHobbies(c);
     }
 
-    //Cette méthode permet de convertir un cursor en un livre
+    //Cette méthode permet de convertir un cursor
     private Hobbies cursorToHobbies(Cursor c){
         //si aucun élément n'a été retourné dans la requête, on renvoie null
         if (c.getCount() == 0)

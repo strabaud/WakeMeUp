@@ -10,6 +10,10 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
 
     private Button OkButton;
 
+    private Button activity1;
+    private Button activity2;
+    private Button activity3;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,7 +35,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
         transactionsDB.insertHobbies(hobbies);
 
 
-        Hobbies hobbiesFromDB = transactionsDB.getHobbiesById(hobbies.getId());
+        Hobbies hobbiesFromDB = transactionsDB.getHobbiesById(1);
 
         if(hobbiesFromDB != null){
             //On affiche les infos du livre dans un Toast
@@ -40,7 +44,20 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
             hobbies.setActivity1("RELIGION");
             //Puis on met à jour la BDD
             transactionsDB.updateHobbies(hobbiesFromDB.getId(), hobbiesFromDB);
+
+            //récupération des champs bouton pour modifier le texte
+
         }
+
+        activity1 = (Button)findViewById(R.id.bt_activity1);
+        activity1.setText(hobbies.getActivity1());
+
+        activity2 = (Button)findViewById(R.id.bt_activity2);
+        activity2.setText(hobbies.getActivity2());
+
+        activity3 = (Button)findViewById(R.id.bt_activity3);
+        activity3.setText(hobbies.getActivity3());
+
 
     }
 
