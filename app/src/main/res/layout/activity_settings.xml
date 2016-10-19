@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:columnCount="1"
-    android:rowCount="7"
+    android:rowCount="8"
     tools:context="com.example.vito.wakemeup.Settings">
 
 

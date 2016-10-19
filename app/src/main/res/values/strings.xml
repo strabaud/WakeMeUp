@@ -2,7 +2,7 @@
     <string name="app_name">WakeMeUp</string>
     <string name="weekDays">Semaine</string>
     <string name="weekend">Week-End</string>
-    <string name="timePick">OK</string>
+    <string name="ok">OK</string>
     <string name="title_activity_time_picker">TimePickerActivity</string>
     <string name="settingsTitle">A propos de moi</string>
     <string name="name">Nom</string>
