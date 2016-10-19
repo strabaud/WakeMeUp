@@ -4,4 +4,10 @@
     <string name="weekend">Week-End</string>
     <string name="timePick">OK</string>
     <string name="title_activity_time_picker">TimePickerActivity</string>
+    <string name="settingsTitle">A propos de moi</string>
+    <string name="name">Nom</string>
+    <string name="favoriteActivities">Mes centres d\'intérêt</string>
+    <string name="activity1">Activité 1</string>
+    <string name="activity2">Activité 2</string>
+    <string name="activity3">Activité 3</string>
 </resources>
