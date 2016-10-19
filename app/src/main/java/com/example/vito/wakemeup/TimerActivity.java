@@ -2,13 +2,11 @@ package com.example.vito.wakemeup;
 
 import android.annotation.TargetApi;
 import android.os.Build;
-import android.support.annotation.MainThread;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.TimePicker;
 import android.view.View;
-import android.content.Intent;
 import android.util.Log;
 
 public class TimerActivity extends AppCompatActivity implements View.OnClickListener {
