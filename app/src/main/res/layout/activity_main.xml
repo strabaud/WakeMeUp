@@ -54,6 +54,7 @@
         android:textSize="20dp" />
 
     <EditText
+        android:ems="15"
         android:id="@+id/WeekDays"
         android:textColor="@android:color/holo_orange_light"
         android:layout_width="wrap_content"
