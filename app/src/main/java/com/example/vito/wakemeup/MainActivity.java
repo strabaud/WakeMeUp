@@ -8,12 +8,15 @@ import android.view.View;
 import android.content.Intent;
 import android.widget.ImageButton;
 
+import java.util.ArrayList;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     // create a editText to get the click option
     EditText WeekDaysEdit;
     ImageButton SettingsEdit;
+    ArrayList<Time> alarms;
 
 
     @Override
@@ -53,9 +56,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Log.e("Bouton","clic pas implémenté !");
         }
     }
+    /*
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+        alarms = Alarms.getInstance().getAlarms();
+        Time t1 = new Time(0,0);
+        t1 = alarms.get(0);
+        String hour  =  Integer.toString(t1.hour);
+        String min = Integer.toString(t1.minutes);
 
-    public void onResume(){
-
+        WeekDaysEdit.setText(hour + " : " + min);
     }
-
+*/
 }

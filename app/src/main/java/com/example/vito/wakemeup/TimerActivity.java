@@ -29,7 +29,7 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
          hour = timePicker1.getHour();
          min = timePicker1.getMinute();
 
-        OkButton.setOnClickListener(this);
+         OkButton.setOnClickListener(this);
     }
 
     // Methode associé à l'appui de l'EditText
