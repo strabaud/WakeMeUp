@@ -62,9 +62,7 @@
         android:layout_column="0"
         android:layout_gravity="center"
         android:textSize="40dp"
-        android:focusable="false"
-        />
-
+        android:focusable="false"/>
 
     <TextView
         android:textColor="@android:color/darker_gray"
