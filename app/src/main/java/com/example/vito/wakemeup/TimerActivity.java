@@ -26,8 +26,15 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
         timePicker1 = (TimePicker) findViewById(R.id.timePicker1);
         OkButton = (Button)findViewById(R.id.bt_Ok);
 
-         hour = timePicker1.getHour();
-         min = timePicker1.getMinute();
+        if (Build.VERSION.SDK_INT >= 23){
+
+            hour = timePicker1.getHour();
+            min = timePicker1.getMinute();
+        }
+        else{
+            hour = timePicker1.getCurrentHour();
+            min = timePicker1.getCurrentMinute();
+        }
 
          OkButton.setOnClickListener(this);
     }
@@ -43,7 +50,7 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
         }
         else
         {
-            Log.e("Bonton","clic pas implémenté !");
+            Log.e("Bouton","clic pas implémenté !");
         }
     }
 
