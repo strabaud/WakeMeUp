@@ -41,4 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Log.e("Bonton","clic pas implémenté !");
         }
     }
+
+
+
 }

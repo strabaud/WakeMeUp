@@ -25,17 +25,20 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
 
         timePicker1 = (TimePicker) findViewById(R.id.timePicker1);
         OkButton = (Button)findViewById(R.id.bt_Ok);
-        OkButton.setOnClickListener(this);
+
          hour = timePicker1.getHour();
          min = timePicker1.getMinute();
+
+        OkButton.setOnClickListener(this);
     }
 
     // Methode associé à l'appui de l'EditText
     public void onClick(View view)
     {
 
-        if(R.id.WeekDays == view.getId())
+        if(R.id.bt_Ok == view.getId())
         {
+            Alarms.getInstance().Create(hour, min);
             this.finish();
         }
         else

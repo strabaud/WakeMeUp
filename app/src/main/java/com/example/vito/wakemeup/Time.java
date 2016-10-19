@@ -8,9 +8,11 @@ public class Time
     int minutes;
     int hour;
 
-    private Time(int min, int hour)
+    public Time(int hour, int min)
     {
         this.hour = hour;
         this.minutes = min;
     }
+
+
 }
