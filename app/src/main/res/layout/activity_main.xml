@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_settings_black_24dp"
-        android:background="@android:color/transparent"/>
+        android:background="@android:color/transparent" />
 
 
     <TextClock
@@ -39,7 +39,7 @@
         android:layout_height="3dp"
         android:background="@android:color/holo_green_light"
         android:layout_row="2"
-        android:layout_columnSpan="2"/>
+        android:layout_columnSpan="2" />
 
     <TextView
 
@@ -51,9 +51,9 @@
         android:layout_column="0"
         android:text="@string/weekDays"
         android:layout_gravity="center"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
 
-    <TextView
+    <EditText
         android:id="@+id/WeekDays"
         android:textColor="@android:color/holo_orange_light"
         android:layout_width="wrap_content"
@@ -62,8 +62,7 @@
         android:layout_column="0"
         android:layout_gravity="center"
         android:textSize="40dp"
-        android:text="New"
-        android:focusable="false"/>
+        android:focusable="false" />
 
     <TextView
         android:textColor="@android:color/darker_gray"
@@ -73,7 +72,7 @@
         android:layout_column="0"
         android:text="@string/weekend"
         android:layout_gravity="center"
-        android:textSize="20dp"/>
+        android:textSize="20dp" />
     <TextView
         android:textColor="@android:color/holo_orange_light"
         android:layout_width="wrap_content"
@@ -82,7 +81,7 @@
         android:layout_column="0"
         android:text="10:30"
         android:layout_gravity="top"
-        android:textSize="40dp"/>
+        android:textSize="40dp" />
 
 
 </GridLayout>
