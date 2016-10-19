@@ -21,6 +21,60 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_0e41fd7084a618490d0e91609375e6052032408c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3549a26f954c0eb5564b5851e712efb628c71097">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d69e36a0d88aaabb01e5eabca9f4dcd21f1b4bbd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c8e6099be26193b599b9c1f24dc7e73ad6f69cdf">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d827e36d69e6da704e11c5aa418c8e2f238e10f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_23eb0d509979ec956adbc10339ca0efc0a1b90d2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_0e451d569b56948e4b580a98271677929afbedb4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_bd82205cd02667cc7b8b1066a4e88b5bf16d742c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -39,24 +93,6 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_0e41fd7084a618490d0e91609375e6052032408c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="ce78b138800840ade493b5b76eab48fdf6e18c2c">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d69e36a0d88aaabb01e5eabca9f4dcd21f1b4bbd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
         jumboMode="true"
         optimize="true"
@@ -66,30 +102,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="b18a9cbc9ccc556524f3c21a9ef700fb158f7076">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d827e36d69e6da704e11c5aa418c8e2f238e10f7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_06a5ff83cb2afe834dd3f3b160550ecce5dac62a/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_23eb0d509979ec956adbc10339ca0efc0a1b90d2/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -120,30 +138,12 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_0e451d569b56948e4b580a98271677929afbedb4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_0a05c81594e7a743402cdca799763363eb6b784e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_bd82205cd02667cc7b8b1066a4e88b5bf16d742c/classes.dex" />
     </item>
     <item
         is-multidex="true"
