@@ -6,12 +6,14 @@ import android.os.Bundle;
 import android.widget.EditText;
 import android.view.View;
 import android.content.Intent;
+import android.widget.ImageButton;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     // create a editText to get the click option
     EditText WeekDaysEdit;
+    ImageButton SettingsEdit;
 
 
     @Override
@@ -23,6 +25,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         WeekDaysEdit = (EditText)findViewById(R.id.WeekDays);
         WeekDaysEdit.setOnClickListener(this);
+
+        SettingsEdit = (ImageButton)findViewById(R.id.imageButton1);
+        SettingsEdit.setOnClickListener(this);
 
     }
 
@@ -37,9 +42,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             startActivity(SetTimerActivity);
 
         }
+        else if(R.id.imageButton1 == view.getId()){
+            Intent SetSettings = new Intent(this,Settings.class);
+            //on passe l'intention au système
+            startActivity(SetSettings);
+        }
+
         else
         {
-            Log.e("Bonton","clic pas implémenté !");
+            Log.e("Bouton","clic pas implémenté !");
         }
     }
 
