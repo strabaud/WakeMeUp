@@ -35,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent SetTimerActivity = new Intent(this,TimerActivity.class);
             //on passe l'intention au système
             startActivity(SetTimerActivity);
+
         }
         else
         {
@@ -42,6 +43,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
     }
 
-
+    public void onResume(){
+        super.Alarms.
+    }
 
 }
