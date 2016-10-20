@@ -9,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:columnCount="2"
-    android:rowCount="7"
+    android:rowCount="10"
     tools:context="com.example.vito.wakemeup.MainActivity">
 
 
@@ -85,12 +85,35 @@
         android:layout_gravity="top"
         android:textSize="40dp" />
 
+
+    <TextView
+        android:id="@+id/longitudeTextView"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="7"
+        android:layout_column="0"
+        android:text="Longitude"
+        android:layout_gravity="center"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/latitudeTextView"
+        android:textColor="@android:color/darker_gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_row="8"
+        android:layout_column="0"
+        android:text="Latitude"
+        android:layout_gravity="center"
+        android:textSize="20dp" />
+
     <Button
         android:id="@+id/button1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Speak for me !"
-        android:layout_row="6"
+        android:layout_row="9"
         android:layout_columnSpan="2"
         android:layout_gravity="bottom|center"/>
 
