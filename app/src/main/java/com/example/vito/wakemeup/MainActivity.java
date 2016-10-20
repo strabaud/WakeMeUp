@@ -1,13 +1,12 @@
 package com.example.vito.wakemeup;
 
 import android.Manifest;
-import android.annotation.TargetApi;
-import android.app.DialogFragment;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.location.Address;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
-import android.location.LocationManager;
 import android.os.Build;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
@@ -18,19 +17,15 @@ import android.widget.TextView;
 import android.view.View;
 import android.content.Intent;
 import android.widget.ImageButton;
-
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
-
-import java.io.FileInputStream;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Locale;
-
-import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
-import static android.support.v4.app.ActivityCompat.requestPermissions;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, TextToSpeech.OnInitListener, LocationListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
@@ -46,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     TextView longii;
     TextView latit;
+    TextView cityText;
     //**************************************************
     private final int MY_PERMISSION_REQUEST_FINE_LOCATION = 101;
     Location mLastLocation; // location
@@ -214,9 +210,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             longii = (TextView) findViewById(R.id.longitudeTextView);
             latit = (TextView) findViewById(R.id.latitudeTextView);
+            cityText = (TextView) findViewById(R.id.CityTextView);
 
             longii.setText(Double.toString(longitude));
             latit.setText(Double.toString(latitude));
+
+            Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+            try
+            {
+                List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
+               Address A1 =  addresses.get(0);
+               String city =  A1.getSubLocality();
+                cityText.setText(city);
+
+            } catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+
+
         }
     }
 
