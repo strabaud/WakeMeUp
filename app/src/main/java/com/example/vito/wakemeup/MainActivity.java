@@ -7,8 +7,10 @@ import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.speech.tts.TextToSpeech;
+import android.speech.tts.Voice;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.os.Bundle;
@@ -20,12 +22,30 @@ import android.widget.ImageButton;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
+
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+import org.w3c.dom.Document;
+import org.xml.sax.SAXException;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Locale;
-import javax.xml.parsers.DocumentBuilderFactory;
 
+import javax.net.ssl.HttpsURLConnection;
+import javax.xml.parsers.DocumentBuilder;
+import javax.xml.parsers.DocumentBuilderFactory;
+import javax.xml.parsers.ParserConfigurationException;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, TextToSpeech.OnInitListener, LocationListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
@@ -47,6 +67,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Location mLastLocation; // location
     double latitude; // latitude
     double longitude; // longitude
+    String City = null;
+   // String strURL = "http://api.openweathermap.org/data/2.5/weather?q=Paris&appid=288c4c3f50e07e9188bdef93c039687c";
+    String weatherFile = "a";
+    String temperature = "";
+    String MinTemp ="";
+    String MaxTem ="";
+    String weather="";
     //****************************************************
 
     @Override
@@ -77,21 +104,50 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         btnSpeak = (Button) findViewById(R.id.button1);
         btnSpeak.setOnClickListener(this);
-
+        System.out.println("Passage dans OnCreate");
+        new WeatherTask().execute();
+        tts.speak(weatherFile, TextToSpeech.QUEUE_FLUSH, null);
         DisplayAlarms();
+        /*
+        try
+        {
+
+            JSONObject jObject = new JSONObject(weatherFile);
+            JSONObject main = jObject.getJSONObject("main");
+            temperature = main.getString("temp");
+            MinTemp = main.getString("temp_min");
+            MaxTem = main.getString("temp_max");
+
+
+
+        }
+        catch (JSONException e)
+        {
+            e.printStackTrace();
+        }
+    */
 
     }
 
-    private void speakOut() {
-        //tts.speak("salut sylvain ! c'est l'heure de te réveillé ! voici les température pour aujourd'hui :", TextToSpeech.QUEUE_FLUSH, null);
+    private void speakOut()
+    {
+        Double tempDouble = Double.valueOf(temperature);
+        int tempInt = tempDouble.intValue();
+        String finalTemp = String.valueOf(tempInt);
+        String W = weather;
+        String phrase = "salut sylvain ! c'est l'heure de te réveillé ! Actuellement il fait " + finalTemp + " degrès dehors, et le temps et " + W;
+        Voice v1 = tts.getVoice();
+        String name = v1.getName();
 
+        tts.speak(phrase, TextToSpeech.QUEUE_FLUSH, null);
         // create a new DocumentBuilderFactory
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
         try
         {
             // use the factory to create a documentbuilder
 
-        } catch (Exception ex) {
+        }
+        catch (Exception ex) {
             ex.printStackTrace();
         }
 
@@ -113,13 +169,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             Intent SetTimerActivity = new Intent(this, TimerActivity.class);
             //on passe l'intention au système
             startActivity(SetTimerActivity);
-        } else if (R.id.imageButton1 == view.getId()) {
+        }
+        else if (R.id.imageButton1 == view.getId()) {
             Intent SetSettings = new Intent(this, Settings.class);
             //on passe l'intention au système
             startActivity(SetSettings);
-        } else if (R.id.button1 == view.getId()) {
+        }
+        else if (R.id.button1 == view.getId()) {
             speakOut();
-        } else {
+        }
+        else {
             Log.e("Bouton", "clic pas implémenté !");
         }
     }
@@ -220,10 +279,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             {
                 List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
                Address A1 =  addresses.get(0);
-               String city =  A1.getSubLocality();
-                cityText.setText(city);
-
-            } catch (IOException e)
+                City =  A1.getSubLocality();
+                cityText.setText(City);
+            }
+            catch (IOException e)
             {
                 e.printStackTrace();
             }
@@ -231,6 +290,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     }
+
 
     @Override
     public void onConnectionSuspended(int i) {
@@ -240,5 +300,62 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onConnectionFailed(ConnectionResult connectionResult) {
 
+    }
+
+    public class WeatherTask extends AsyncTask<String, Void, String>
+    {
+
+        @Override
+        protected String doInBackground(String... params) {
+            try
+            {
+                if(City != "")
+                {
+                    String Url ="http://api.openweathermap.org/data/2.5/weather?q="+City+"&units=metric&lang=fr&appid=288c4c3f50e07e9188bdef93c039687c";
+                    URL url = new URL(Url);
+                    HttpURLConnection con = (HttpURLConnection) url.openConnection();
+                    con.setRequestMethod("GET");
+                    con.connect();
+
+                    BufferedReader bf = new BufferedReader(new InputStreamReader(con.getInputStream()));
+
+                    String value = bf.readLine();
+                    weatherFile = value;
+
+                }
+
+
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+            return null;
+        }
+
+        @Override
+        protected void onPostExecute(String s){
+            super.onPostExecute(s);
+
+            try
+            {
+                JSONObject jObject = new JSONObject(weatherFile);
+                JSONObject main = jObject.getJSONObject("main");
+                temperature = main.getString("temp");
+                MinTemp = main.getString("temp_min");
+                MaxTem = main.getString("temp_max");
+                JSONArray weatherObj = jObject.getJSONArray("weather");
+                JSONObject j = weatherObj.getJSONObject(0);
+
+                weather = j.getString("description");
+
+                tts.speak("La temperature est accessible !", TextToSpeech.QUEUE_FLUSH, null);
+            }
+            catch (JSONException e)
+            {
+                e.printStackTrace();
+            }
+
+        }
     }
 }

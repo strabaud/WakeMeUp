@@ -3,174 +3,1254 @@
 
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\9.6.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_24d5468b750942e608bb74747f7795659e270719/classes.dex" />
+        sha1="f6aa7c76cbaa867e05dbad0afab1ef0e65c4e55f">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-9.6.1_0d3ce2db1e7220c1119782ec2f2206870e367ca4\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.6.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_7f97e69f4c09544274fca290f1e42a6f8ae7ffea/classes.dex" />
+        sha1="526f4b02f1771fa7607ff1b89fe2e9bd0344fee8">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-9.6.1_aec15324c89f4365ec79bae6f713a1dd3edc8996\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ff9be0a1e75a21c372735930d8987a55b5e6065f">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-panorama-9.6.1_dfbb0fd27e5a312bd240e054afaafc4672b0b324.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-storage-common-9.6.1_80c8bb60c3a57f682e9807b190b5bcfbd9a22f32.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="da3f763afd39da1c947d9442847c837e9182a09f">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-9.6.1_44012daea4c96d24c313fcb1fd09e31d78ad721a.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\9.6.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_0e41fd7084a618490d0e91609375e6052032408c/classes.dex" />
+        sha1="ff9be0a1e75a21c372735930d8987a55b5e6065f">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-9.6.1_dfbb0fd27e5a312bd240e054afaafc4672b0b324\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\9.6.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="f99a8885680bafd81962f3351e816e37b4ad0ff6">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d69e36a0d88aaabb01e5eabca9f4dcd21f1b4bbd/classes.dex" />
+        sha1="da3f763afd39da1c947d9442847c837e9182a09f">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-9.6.1_44012daea4c96d24c313fcb1fd09e31d78ad721a\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.6.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="05c84cfea345b711817763cef40e8b1d2fe6c725">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d827e36d69e6da704e11c5aa418c8e2f238e10f7/classes.dex" />
+        sha1="ee0ccb43f6ab276191b7f2d77c305fa9beb26db9">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-9.6.1_c238ee7c4d5d968af342fab4179d466e364c877d\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ee0ccb43f6ab276191b7f2d77c305fa9beb26db9">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-clearcut-9.6.1_c238ee7c4d5d968af342fab4179d466e364c877d.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\9.6.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_23eb0d509979ec956adbc10339ca0efc0a1b90d2/classes.dex" />
+        sha1="a136366045678579300d161de97c2211c4c4f7a0">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-9.6.1_40b326b6587d805a9005eb6cda7e436e0ad0313c\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\9.6.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_0e451d569b56948e4b580a98271677929afbedb4/classes.dex" />
+        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-9.6.1_80c8bb60c3a57f682e9807b190b5bcfbd9a22f32\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\multidex\1.0.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_bd82205cd02667cc7b8b1066a4e88b5bf16d742c/classes.dex" />
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-multidex-1.0.1_44cf3db9f1616f0e11adec4c116ee3b6afe40680\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f0e96478ca3147bc588aadb9ae467d85b42473cc">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tagmanager-api-9.6.1_ac0e35314c9209e19674a39df62da55fe3114555.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="526f4b02f1771fa7607ff1b89fe2e9bd0344fee8">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-analytics-9.6.1_aec15324c89f4365ec79bae6f713a1dd3edc8996.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="babb25794a7599069d34705038744c5760a9a88c">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-instantapps-9.6.1_af0495798301961b66ebac3f978503a531b7bf70.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_bcf552a34857167fd31c0a0567674485654e055c/classes.dex" />
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-9.6.1_481467e2c463e019aacd289c7bcc0c52c203ce55\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_c91bf623fc56b10cdec752ce3f4854644fd05829/classes.dex" />
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_dbe8e58237e868fb0cdfddbf98ce4590cd8897b6\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d45c048bb1c55cf963899190e507065aea8e5be9">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-9.6.1_7b6081b37dbf35fc9557cd32faa6d05221ebca5f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1810ae0df0a1b9b539ce97df54e96f2bf8f5ff94">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-9.6.1_1bebdb88dfc24bafef00997ec43705f83bfbd405\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_e066f2b5d4e9e55922ec56f85eec97c7d3714ac6/classes.dex" />
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_0cf78994b52b7bd43d11169046bb08b25d607c4b\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_06a5ff83cb2afe834dd3f3b160550ecce5dac62a/classes.dex" />
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-24.2.1_7441964262da0efa78cfdbacf66efd47df5bcda7\classes.dex" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_89b78a7b3736f0ef26aa2756a3b55b2f3d8f0ae7/classes.dex" />
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\internal_impl-24.0.0_dbe8e58237e868fb0cdfddbf98ce4590cd8897b6.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_1d3432d483da444a1987d31db2aff717a680e949/classes.dex" />
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.2.1_7441964262da0efa78cfdbacf66efd47df5bcda7.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_d9337db57e50441dc894bfd698783c31e677b826/classes.dex" />
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_0cf78994b52b7bd43d11169046bb08b25d607c4b.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_0a05c81594e7a743402cdca799763363eb6b784e/classes.dex" />
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_2c851a4f714f9c3f70ee6721c73edcfe206391a0.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.6.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_52fb3da1e183cef63a9434e627d9a2f3c3e8859d/classes.dex" />
+        sha1="2a18547ea91d258866d132c2a763185f15b01b25">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-9.6.1_13db4bc5e48efa06746e6f0c7cb69773903bd82f\classes.dex" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.6.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_c91962ecedf4110b1a0bfe07fcfce6f24a79082b/classes.dex" />
+        sha1="465f40f840e583f8b7421a3aacf3fbf08c28f00a">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-9.6.1_043b0257dc513c5b14d6a97cbc862bd5ce304a32\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="2a18547ea91d258866d132c2a763185f15b01b25">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-9.6.1_13db4bc5e48efa06746e6f0c7cb69773903bd82f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.2.1_a44a83b21593eafd2299198991538333e3e44a3f.jar" />
     </item>
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
-        jumboMode="true"
+        jar="C:\Users\jeanTindel\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.2.1_2c851a4f714f9c3f70ee6721c73edcfe206391a0\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a136366045678579300d161de97c2211c4c4f7a0">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-cast-9.6.1_40b326b6587d805a9005eb6cda7e436e0ad0313c.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.2.1_a44a83b21593eafd2299198991538333e3e44a3f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d45c048bb1c55cf963899190e507065aea8e5be9">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-games-9.6.1_7b6081b37dbf35fc9557cd32faa6d05221ebca5f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f6aa7c76cbaa867e05dbad0afab1ef0e65c4e55f">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-nearby-9.6.1_0d3ce2db1e7220c1119782ec2f2206870e367ca4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1810ae0df0a1b9b539ce97df54e96f2bf8f5ff94">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tagmanager-9.6.1_1bebdb88dfc24bafef00997ec43705f83bfbd405.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-9.6.1_481467e2c463e019aacd289c7bcc0c52c203ce55.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-9.6.1_95036b7a550ec24a0934a0cc2cc0a0fa6f528a67\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-common-9.6.1_95036b7a550ec24a0934a0cc2cc0a0fa6f528a67.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-9.6.1_fae835168772804cdf821707980378d930b8ce77\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="47bbb3ec4b31ba71e125241c090dabe70cbb4de7">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-9.6.1_940c15756c48cdec968b6095d9c76b67a56cba2a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="518adc52081d41724932b41bc132e4d50a352b86">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-identity-9.6.1_2b4796fc9c2f8223ac5347f82c8537036a9321db.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="518adc52081d41724932b41bc132e4d50a352b86">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-9.6.1_2b4796fc9c2f8223ac5347f82c8537036a9321db\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="47bbb3ec4b31ba71e125241c090dabe70cbb4de7">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-9.6.1_940c15756c48cdec968b6095d9c76b67a56cba2a\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-messaging-9.6.1_fae835168772804cdf821707980378d930b8ce77.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-9.6.1_78a289b08c1812b3b1f01bb36a4c81f159057927.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.2.1_958386f1cd289f7170a563261fe5264e2003f316.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-9.6.1_78a289b08c1812b3b1f01bb36a4c81f159057927\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.2.1_958386f1cd289f7170a563261fe5264e2003f316\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_09ce10962f77e9d45c22f849e398aaa628d68667\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0cae6511c5705869cacf199f8abb0ea84cd10157">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-9.6.1_a5673c81ef914a00281ad3e996a0e37be133eb2c\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_09ce10962f77e9d45c22f849e398aaa628d68667.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-impl-9.6.1_806c509e2e7ed5cc32e00249acf925c25ff65796.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-9.6.1_8bbae6104601770d399b4567e09ca74a7618f2d4\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0cae6511c5705869cacf199f8abb0ea84cd10157">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-vision-9.6.1_a5673c81ef914a00281ad3e996a0e37be133eb2c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c828add497d2b7a3de7c047bf72050cd4b7521a1">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-safetynet-9.6.1_00d1df5b84d33f3ee6b942f95edcca0039789d4f.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-24.2.1_b909e7a6d088f64eef55d5eff902df3b28bbd9b3\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-9.6.1_8bbae6104601770d399b4567e09ca74a7618f2d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-iid-9.6.1_f6cb544f83a225638ca6ff443d38b441bfa55148.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-24.2.1_b909e7a6d088f64eef55d5eff902df3b28bbd9b3.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-9.6.1_806c509e2e7ed5cc32e00249acf925c25ff65796\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-9.6.1_f6cb544f83a225638ca6ff443d38b441bfa55148\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c828add497d2b7a3de7c047bf72050cd4b7521a1">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-9.6.1_00d1df5b84d33f3ee6b942f95edcca0039789d4f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c4394d46152165cd3256fb711ac94f66a28fbae1">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-9.6.1_9fa8ab4b3ce77cf1940dad86efacc0eb6f1d9c9b\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="90be14317e3f26d18438e8dbf8544500d1dfe07f">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-awareness-9.6.1_ad398b9f17cae84c89870684f692cac7c42736ce.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4df40545c9b875855f3dd9d4928e5d07f07c20ba">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-9.6.1_ae3875b2dbed63ce38316134468dd8ad5e07a94e\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c0cf3d4f9d7d076f301e110b92e18ae23da12c2">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-cast-framework-9.6.1_f052038dc5304a8e90d7733b11135f030900ad53.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_3969c64eaea7a3b355e1bdfa0cac5c9153545a37\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appindexing-9.6.1_4350c34531c575240e7ed0c5bcca3fd4a10646b9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="79f521967ad7f49b34748db89df02852c2b2f87b">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-location-9.6.1_59e7ea3ac052d0aeab64b0791ab4ea5bdddd0529.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4df40545c9b875855f3dd9d4928e5d07f07c20ba">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-crash-9.6.1_ae3875b2dbed63ce38316134468dd8ad5e07a94e.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="79f521967ad7f49b34748db89df02852c2b2f87b">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-9.6.1_59e7ea3ac052d0aeab64b0791ab4ea5bdddd0529\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c4394d46152165cd3256fb711ac94f66a28fbae1">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-wearable-9.6.1_9fa8ab4b3ce77cf1940dad86efacc0eb6f1d9c9b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-mediarouter-v7-24.0.0_063a6cad45ae08668202885d600be02d72b7ffa9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a53ac0560ab915a02c50d2e5c7b003381e6fb5e3">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-9.6.1_d19952c09727004f29754b7d85314c8d1de097e4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="24.0.3"
         sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_49627645d26b4bebf4a025782bce5bb80bc27350/classes.dex" />
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-24.2.1_3fd2a3cce9302d87fbafb2687e16e2e55b26726c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-9.6.1_5e064df38be7060ebe4310d04bd43ee97fcd157d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-24.0.0_063a6cad45ae08668202885d600be02d72b7ffa9\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a53ac0560ab915a02c50d2e5c7b003381e6fb5e3">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-analytics-impl-9.6.1_d19952c09727004f29754b7d85314c8d1de097e4.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c0cf3d4f9d7d076f301e110b92e18ae23da12c2">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-9.6.1_f052038dc5304a8e90d7733b11135f030900ad53\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="62ff84124b89177abc0c27f3e38c9732f2d41617">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-maps-9.6.1_5e064df38be7060ebe4310d04bd43ee97fcd157d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-fragment\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-24.2.1_3fd2a3cce9302d87fbafb2687e16e2e55b26726c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f8db47be01cbe8cfa81e9cecce5ff1371ed1ad95">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-drive-9.6.1_c4cd4e3f70fd440192eb43ce718c5b22e7b52ab7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.2.1_c2583b816e10887c0dd3df2eabde35e69903078d\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.2.1_c2583b816e10887c0dd3df2eabde35e69903078d.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-9.6.1_f6faf7676f37198501b1bd617704f4be21d4dffd\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cf2c4e6607c77b0e671dc5ca252c5ea0d9c1ce0d">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-config-9.6.1_f29021eb9d4f8bfcc8b0bbbf562a6b96eae5555f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a76a6983a23788b3689524d4bed763955afbd306">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-fitness-9.6.1_ace8ae287c3f525cd60af8a30afa303bcb69da26.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f8db47be01cbe8cfa81e9cecce5ff1371ed1ad95">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-9.6.1_c4cd4e3f70fd440192eb43ce718c5b22e7b52ab7\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-module-9.6.1_13e40720f0867f9924cef7e02eca5f55c579cfd7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-storage-9.6.1_f6faf7676f37198501b1bd617704f4be21d4dffd.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a76a6983a23788b3689524d4bed763955afbd306">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-9.6.1_ace8ae287c3f525cd60af8a30afa303bcb69da26\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-24.2.1_3ab213823ceb5062d5a29a5f954d5deef5782f49.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ad7706f8bb4a985656a8d2142f74021c8b0e03d8">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gcm-9.6.1_7cd270ab1dbcfc33f8329e09725b560bcec82710.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.2.1_5414181fb8c33c6b5a29c626d03692db0a0aa0dc.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-9.6.1_4350c34531c575240e7ed0c5bcca3fd4a10646b9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-module\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-module-9.6.1_13e40720f0867f9924cef7e02eca5f55c579cfd7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-24.2.1_3ab213823ceb5062d5a29a5f954d5deef5782f49\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.2.1_c7f5cae1da325888b80bdec55cae050008539a4f.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="90be14317e3f26d18438e8dbf8544500d1dfe07f">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-awareness-9.6.1_ad398b9f17cae84c89870684f692cac7c42736ce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cf2c4e6607c77b0e671dc5ca252c5ea0d9c1ce0d">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-9.6.1_f29021eb9d4f8bfcc8b0bbbf562a6b96eae5555f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\design\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-24.2.1_5414181fb8c33c6b5a29c626d03692db0a0aa0dc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.2.1_c7f5cae1da325888b80bdec55cae050008539a4f\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ee61ace5f3e488fc610e1c67693c49186a441f32">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-gass-9.6.1_48b602822f6ffabe55ba683a394f4fbd6efdf9e7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-9.6.1_0405cec50d271abe26f657b789832a2a710c6018\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_a22c9476a2250bb91bb3c4ef9e1d54b5b36ddd08.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-24.2.1_492e316297b4ea69609db2f510180a9922fbff46\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ac8365c87591065db07f7bac8551504504832cd4">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-database-connection-9.6.1_6d21d1f7766253d896d0c303641980888acfb749.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-9.6.1_0405cec50d271abe26f657b789832a2a710c6018.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="465f40f840e583f8b7421a3aacf3fbf08c28f00a">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-9.6.1_043b0257dc513c5b14d6a97cbc862bd5ce304a32.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ad7706f8bb4a985656a8d2142f74021c8b0e03d8">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-9.6.1_7cd270ab1dbcfc33f8329e09725b560bcec82710\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0dfc12e4aacf514346ea866560c99807d032bc48">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-9.6.1_7c330d14584920085feb2a15c2a5577647809362\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ee61ace5f3e488fc610e1c67693c49186a441f32">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-9.6.1_48b602822f6ffabe55ba683a394f4fbd6efdf9e7\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-24.2.1_492e316297b4ea69609db2f510180a9922fbff46.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0dfc12e4aacf514346ea866560c99807d032bc48">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-iid-9.6.1_7c330d14584920085feb2a15c2a5577647809362.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-24.2.1_d3b86aff457b40aac4d50035840a08527eefa955\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8ebae43cd06058e99e08c8b4d305b72f2b9927c6">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-9.6.1_041e69807d3c4a67588fc2cafd0bc10e176c5593\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ac8365c87591065db07f7bac8551504504832cd4">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-9.6.1_6d21d1f7766253d896d0c303641980888acfb749\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-support-compat-24.2.1_d3b86aff457b40aac4d50035840a08527eefa955.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8ebae43cd06058e99e08c8b4d305b72f2b9927c6">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-plus-9.6.1_041e69807d3c4a67588fc2cafd0bc10e176c5593.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="babb25794a7599069d34705038744c5760a9a88c">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-instantapps-9.6.1_af0495798301961b66ebac3f978503a531b7bf70\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_a22c9476a2250bb91bb3c4ef9e1d54b5b36ddd08\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-analytics-9.6.1_44dced8ad84238a84a7b248a5dc581f4b4cfadb7.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f0e96478ca3147bc588aadb9ae467d85b42473cc">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-9.6.1_ac0e35314c9209e19674a39df62da55fe3114555\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-common-9.6.1_b5cab830284c9544c5ab2386b0823b9fbdd69040\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6ff796a3173787afe2e712f3aec6f5b99796118e">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-ads-lite-9.6.1_fa7819b4103466314da165a83b670766ca4c71b0.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_7259afd045b7bacd46cf4640652cee6b1ea50c4e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-9.6.1_44dced8ad84238a84a7b248a5dc581f4b4cfadb7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6ff796a3173787afe2e712f3aec6f5b99796118e">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-9.6.1_fa7819b4103466314da165a83b670766ca4c71b0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cdddf21e0a8205e9955661061d1735ed10e44a7b">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-9.6.1_c2683b4796763ca9ba64e340191107361b1d3dd6\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_30577faa9c59d2466046e53c9651ed71e9625bdb.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="dfcba20b85ef3669a8ced0a8760a6df281cbd7c7">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-9.6.1_478d08eb47d5bf7a69d9595e5d6fdc8956069256\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0e0e0681c26a1f575d3e4c542182dd59bab75fd6">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-appinvite-9.6.1_16a57c533f66e4c08aad98cd014c39db251859ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.android.support-palette-v7-24.0.0_3969c64eaea7a3b355e1bdfa0cac5c9153545a37.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="dfcba20b85ef3669a8ced0a8760a6df281cbd7c7">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-wallet-9.6.1_478d08eb47d5bf7a69d9595e5d6fdc8956069256.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cdddf21e0a8205e9955661061d1735ed10e44a7b">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-places-9.6.1_c2683b4796763ca9ba64e340191107361b1d3dd6.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="0e0e0681c26a1f575d3e4c542182dd59bab75fd6">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-9.6.1_16a57c533f66e4c08aad98cd014c39db251859ca\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_7259afd045b7bacd46cf4640652cee6b1ea50c4e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth-common\9.6.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="77558e74bb2056ef38516296f13a27c4c4fc3e5c">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\pre-dexed\debug\com.google.firebase-firebase-auth-common-9.6.1_b5cab830284c9544c5ab2386b0823b9fbdd69040.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\exploded-aar\com.android.support\support-compat\24.2.1\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="C:\Users\jeanTindel\SkyDrive\grenoble\Documents\cours ESIEA\5A\wakeMeUp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.2.1_30577faa9c59d2466046e53c9651ed71e9625bdb\classes.dex" />
     </item>
 
 </items>
