@@ -3,14 +3,18 @@ package com.example.vito.wakemeup;
 import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.icu.util.ValueIterator;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.speech.tts.TextToSpeech;
 import android.speech.tts.Voice;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.os.Bundle;
@@ -19,6 +23,8 @@ import android.widget.TextView;
 import android.view.View;
 import android.content.Intent;
 import android.widget.ImageButton;
+import android.widget.Toast;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
@@ -28,7 +34,11 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
+import org.xml.sax.XMLReader;
+import org.xmlpull.v1.XmlPullParser;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
@@ -39,8 +49,10 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
+import java.util.Map;
 
 import javax.net.ssl.HttpsURLConnection;
 import javax.xml.parsers.DocumentBuilder;
@@ -64,10 +76,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView cityText;
     //**************************************************
     private final int MY_PERMISSION_REQUEST_FINE_LOCATION = 101;
+    protected LocationManager locationManager;
+    protected LocationListener locationListener;
     Location mLastLocation; // location
     double latitude; // latitude
     double longitude; // longitude
-    String City = null;
+    String City = "";
    // String strURL = "http://api.openweathermap.org/data/2.5/weather?q=Paris&appid=288c4c3f50e07e9188bdef93c039687c";
     String weatherFile = "a";
     String temperature = "";
@@ -75,18 +89,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String MaxTem ="";
     String weather="";
     //****************************************************
+    String newsFile = "";
+    Map<String, String> map = new HashMap<String, String>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-
-        if (mGoogleApiClient == null) {
+        mGoogleApiClient = new GoogleApiClient.Builder(this, this, this).addApi(LocationServices.API).build();
+        /*if (mGoogleApiClient == null) {
             mGoogleApiClient = new GoogleApiClient.Builder(this)
                     .addConnectionCallbacks(this)
                     .addOnConnectionFailedListener(this)
                     .addApi(LocationServices.API)
                     .build();
+        }*/
+
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
+        {
+            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.ACCESS_COARSE_LOCATION}, MY_PERMISSION_REQUEST_FINE_LOCATION);
         }
 
 
@@ -105,27 +126,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         btnSpeak = (Button) findViewById(R.id.button1);
         btnSpeak.setOnClickListener(this);
         System.out.println("Passage dans OnCreate");
-        new WeatherTask().execute();
-        tts.speak(weatherFile, TextToSpeech.QUEUE_FLUSH, null);
-        DisplayAlarms();
-        /*
-        try
-        {
-
-            JSONObject jObject = new JSONObject(weatherFile);
-            JSONObject main = jObject.getJSONObject("main");
-            temperature = main.getString("temp");
-            MinTemp = main.getString("temp_min");
-            MaxTem = main.getString("temp_max");
 
 
-
-        }
-        catch (JSONException e)
-        {
-            e.printStackTrace();
-        }
-    */
+        //longii.setText(Double.toString(longitude));
+        //latit.setText(Double.toString(latitude));
+        //cityText.setText(City);
 
     }
 
@@ -135,32 +140,36 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int tempInt = tempDouble.intValue();
         String finalTemp = String.valueOf(tempInt);
         String W = weather;
-        String phrase = "salut sylvain ! c'est l'heure de te réveillé ! Actuellement il fait " + finalTemp + " degrès dehors, et le temps et " + W;
+        String phrase = "salut sylvain ! c'est l'heure de te réveillé ! Actuellement  il fait " + finalTemp + " degrès dehors, et le temps et " + W;
         Voice v1 = tts.getVoice();
         String name = v1.getName();
 
-        tts.speak(phrase, TextToSpeech.QUEUE_FLUSH, null);
-        // create a new DocumentBuilderFactory
-        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-        try
-        {
-            // use the factory to create a documentbuilder
+        tts.speak(phrase, TextToSpeech.QUEUE_ADD, null);
 
-        }
-        catch (Exception ex) {
-            ex.printStackTrace();
+        tts.playSilence(1000, TextToSpeech.QUEUE_ADD, null);
+
+        tts.speak("voici les nouvelles pour aujourd'hui ", TextToSpeech.QUEUE_ADD, null);
+        int i =0;
+        for (Map.Entry<String, String> entry : map.entrySet())
+        {
+            tts.playSilence(1000, TextToSpeech.QUEUE_ADD, null);
+            tts.speak("Titre de l'article " + entry.getKey(), TextToSpeech.QUEUE_ADD, null);
+            tts.playSilence(1000, TextToSpeech.QUEUE_ADD, null);
+            tts.speak("Description" + entry.getValue(), TextToSpeech.QUEUE_ADD, null);
         }
 
     }
 
     protected void onStart() {
-        mGoogleApiClient.connect();
         super.onStart();
+        mGoogleApiClient.connect();
+
     }
 
     protected void onStop() {
-        mGoogleApiClient.disconnect();
         super.onStop();
+        mGoogleApiClient.disconnect();
+
     }
 
     // Methode associé à l'appui de l'EditText
@@ -211,7 +220,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     // init pour le textTo speech
     @Override
-    public void onInit(int status) {
+    public void onInit(int status)
+    {
+
         if (status == TextToSpeech.SUCCESS) {
 
             int result = tts.setLanguage(Locale.FRANCE);
@@ -220,7 +231,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Log.e("TTS", "This Language is not supported");
             } else {
                 btnSpeak.setEnabled(true);
-                speakOut();
+
             }
 
         } else {
@@ -231,6 +242,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
 
+    @Override
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
+        switch (requestCode)
+        {
+            case MY_PERMISSION_REQUEST_FINE_LOCATION:
+                if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED)
+                {
+                    // All good!
+                }
+                else
+                {
+                    Toast.makeText(this, "Need your location!", Toast.LENGTH_SHORT).show();
+                }break;
+            }
+    }
     @Override
     public void onLocationChanged(Location location) {
 
@@ -253,8 +279,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
 
     @Override
-    public void onConnected(Bundle connectionHint) {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+    public void onConnected(Bundle connectionHint)
+    {
+        /*
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
+        {
             if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
             {
                 requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, MY_PERMISSION_REQUEST_FINE_LOCATION);
@@ -286,9 +315,30 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             {
                 e.printStackTrace();
             }
+        }*/
+        if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED)
+        {
+            Location lastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
 
+            latitude = lastLocation.getLatitude();
+            longitude = lastLocation.getLongitude();
+            Geocoder geocoder = new Geocoder(this, Locale.getDefault());
+            try
+            {
+                List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
+                Address A1 =  addresses.get(0);
+                City =  A1.getSubLocality();
+                new WeatherTask().execute();
 
+            }
+            catch (IOException e)
+            {
+                e.printStackTrace();
+            }
+            //String url = String.format("http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&units=%s&appid=%s", lat, lon, units, APP_ID);
+            //new GetWeatherTask(textView).execute(url);
         }
+
     }
 
 
@@ -309,18 +359,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         protected String doInBackground(String... params) {
             try
             {
-                if(City != "")
+                if(City != null)
                 {
-                    String Url ="http://api.openweathermap.org/data/2.5/weather?q="+City+"&units=metric&lang=fr&appid=288c4c3f50e07e9188bdef93c039687c";
-                    URL url = new URL(Url);
+
+                    String UrlWeather ="http://api.openweathermap.org/data/2.5/weather?q="+City+"&units=metric&lang=fr&appid=288c4c3f50e07e9188bdef93c039687c";
+                    URL url = new URL(UrlWeather);
                     HttpURLConnection con = (HttpURLConnection) url.openConnection();
                     con.setRequestMethod("GET");
                     con.connect();
-
                     BufferedReader bf = new BufferedReader(new InputStreamReader(con.getInputStream()));
-
                     String value = bf.readLine();
                     weatherFile = value;
+
+                    /*************************************************************************************************/
+                    String UrlNews = "http://www.lemonde.fr/technologies/rss_full.xml";
+                    URL url2 = new URL(UrlNews);
+                    con = (HttpURLConnection) url2.openConnection();
+                    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+                    DocumentBuilder builder = factory.newDocumentBuilder();
+                    Document doc = builder.parse(con.getInputStream());
+                    NodeList nodes = doc.getElementsByTagName("item");
+                    for (int i = 0; i < nodes.getLength(); i++)
+                    {
+                        Element element = (Element) nodes.item(i);
+                        NodeList titleNode = element.getElementsByTagName("title");
+                        Element line = (Element) titleNode.item(0);
+                        String Title = line.getTextContent();
+                        //
+                        NodeList descriptionNode = element.getElementsByTagName("description");
+                        Element descriptionLine = (Element) descriptionNode.item(0);
+                        String description = descriptionLine.getTextContent();
+
+                        map.put(Title,description);
+
+                    }
 
                 }
 
@@ -328,6 +400,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             catch (IOException e)
             {
+                e.printStackTrace();
+            } catch (ParserConfigurationException e) {
+                e.printStackTrace();
+            } catch (SAXException e) {
                 e.printStackTrace();
             }
             return null;
@@ -349,7 +425,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                 weather = j.getString("description");
 
-                tts.speak("La temperature est accessible !", TextToSpeech.QUEUE_FLUSH, null);
+
+
+
             }
             catch (JSONException e)
             {
