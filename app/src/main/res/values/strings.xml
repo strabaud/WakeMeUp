@@ -10,4 +10,8 @@
     <string name="activity1">Activité 1</string>
     <string name="activity2">Activité 2</string>
     <string name="activity3">Activité 3</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="city">City</string>
+    <string name="speaker">Speak for me !</string>
 </resources>
