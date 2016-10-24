@@ -175,7 +175,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int tempInt = tempDouble.intValue();
         String finalTemp = String.valueOf(tempInt);
         String W = weather;
-        String wakeUp = "Bonjour sylvain ! c'est l'heure de te réveiller ! Actuellement, il fait " + finalTemp + " degrés dehors, et le temps est " + W;
+        String wakeUp = "Bonjour sylvain ! c'est l'heure de te réveiller ! Actuellement, il fait " + finalTemp + " degrés dans la ville de " +City+" , et le temps est " + W;
         String newsToday ="Voici les nouvelles pour aujourd'hui ";
         String title = "Titre de l'article ";
         String description = "Description ";
