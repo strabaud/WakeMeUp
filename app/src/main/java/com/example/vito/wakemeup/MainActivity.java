@@ -1,6 +1,7 @@
 package com.example.vito.wakemeup;
 
 import android.Manifest;
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.icu.util.ValueIterator;
@@ -92,6 +93,40 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String newsFile = "";
     Map<String, String> map = new HashMap<String, String>();
 
+
+//// GESTION DES DEPRECATED
+    private void tts(String string){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            ttsGreater21(string);
+        }
+        else{
+            ttsUnder20(string);
+        }
+    }
+    private void ttsSilence(int number){
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            tts.playSilentUtterance(number, TextToSpeech.QUEUE_ADD, null);
+        }
+        else{
+            tts.playSilence(number, TextToSpeech.QUEUE_ADD, null);
+        }
+    }
+
+    @SuppressWarnings("deprecation")
+    private void ttsUnder20(String text) {
+        HashMap<String, String> map = new HashMap<>();
+        map.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "MessageId");
+        tts.speak(text, TextToSpeech.QUEUE_ADD, map);
+    }
+
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
+    private void ttsGreater21(String text) {
+        String utteranceId=this.hashCode() + "";
+        tts.speak(text, TextToSpeech.QUEUE_ADD, null, utteranceId);
+    }
+//////
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -140,22 +175,33 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         int tempInt = tempDouble.intValue();
         String finalTemp = String.valueOf(tempInt);
         String W = weather;
-        String phrase = "salut sylvain ! c'est l'heure de te réveillé ! Actuellement  il fait " + finalTemp + " degrès dehors, et le temps et " + W;
-        Voice v1 = tts.getVoice();
-        String name = v1.getName();
+        String wakeUp = "Bonjour sylvain ! c'est l'heure de te réveiller ! Actuellement, il fait " + finalTemp + " degrés dehors, et le temps est " + W;
+        String newsToday ="Voici les nouvelles pour aujourd'hui ";
+        String title = "Titre de l'article ";
+        String description = "Description ";
+        int averageWaitingTime=1000;
 
-        tts.speak(phrase, TextToSpeech.QUEUE_ADD, null);
+        /*
+        A VOIR SI ON UTILISE OU PAS
+        //Voice v1 = tts.getVoice();
+        //String name = v1.getName();
+         */
 
-        tts.playSilence(1000, TextToSpeech.QUEUE_ADD, null);
 
-        tts.speak("voici les nouvelles pour aujourd'hui ", TextToSpeech.QUEUE_ADD, null);
-        int i =0;
+/// Watch deprecated functions after VARIABLES DECLARATIONS to understand those functions
+            tts(wakeUp);
+            ttsSilence(averageWaitingTime);
+            tts(newsToday);
+            ttsSilence(averageWaitingTime);
+
+        int i =1;
         for (Map.Entry<String, String> entry : map.entrySet())
         {
-            tts.playSilence(1000, TextToSpeech.QUEUE_ADD, null);
-            tts.speak("Titre de l'article " + entry.getKey(), TextToSpeech.QUEUE_ADD, null);
-            tts.playSilence(1000, TextToSpeech.QUEUE_ADD, null);
-            tts.speak("Description" + entry.getValue(), TextToSpeech.QUEUE_ADD, null);
+            tts(title +" "+Integer.toString(i)+" "+ entry.getKey());
+            ttsSilence(averageWaitingTime);
+            tts(description +" "+Integer.toString(i)+" "+ entry.getValue());
+            ttsSilence(averageWaitingTime);
+            i++;
         }
 
     }
@@ -308,7 +354,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             {
                 List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
                Address A1 =  addresses.get(0);
-                City =  A1.getSubLocality();
+                City =  A1.getLocality();
                 cityText.setText("City : "+City);
             }
             catch (IOException e)
@@ -327,7 +373,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             {
                 List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
                 Address A1 =  addresses.get(0);
-                City =  A1.getSubLocality();
+                if(A1.getSubLocality()!=null){
+                    City = A1.getSubLocality();
+                }
+                else{
+                    City = A1.getLocality();
+                }
                 new WeatherTask().execute();
 
             }

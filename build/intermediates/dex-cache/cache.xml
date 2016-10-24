@@ -3,258 +3,6 @@
 
     <item
         is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_dda30c90b99b158f70897ffdc469c8aed1129e53/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.1_5e7c60a86f82fcbb400da3f1304156be9eb5029c/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.1_836437b1f4419b828f93b4385080cc81072ebe3e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="cf2c4e6607c77b0e671dc5ca252c5ea0d9c1ce0d">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.6.1_eada99e5f89382e21f0cae8660751b885286169e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="a136366045678579300d161de97c2211c4c4f7a0">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.6.1_24516b4842b7ed4ddccbcda42044a23920b930af/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="cdddf21e0a8205e9955661061d1735ed10e44a7b">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.6.1_58c77d9bf508173db317ff2a97aadcd047f295ab/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="da3f763afd39da1c947d9442847c837e9182a09f">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.6.1_e3bc752995f33636f05d82b3eca64a6adec3daf2/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_7f97e69f4c09544274fca290f1e42a6f8ae7ffea/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="babb25794a7599069d34705038744c5760a9a88c">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-9.6.1_26ae3151f04d4501cc7452870a4fbd4b4c560691/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="4df40545c9b875855f3dd9d4928e5d07f07c20ba">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.6.1_6319904feedc5f0a3eea25d449611bd4c737f0ec/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f0e96478ca3147bc588aadb9ae467d85b42473cc">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.6.1_e53492e054bb99873af7066f57d093c9806ede07/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.6.1_b5a75cd73aff55f37bb8b86fe92e2d7246f2cc0f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.1_fb587b829979cc8728e57141b70babec6c993a51/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="465f40f840e583f8b7421a3aacf3fbf08c28f00a">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.1_739e29b6a49d4c79fedd8965628d82d21dcc5552/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="867dad63c33388ff8c7644b236579355036d075f">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_c91962ecedf4110b1a0bfe07fcfce6f24a79082b/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="c828add497d2b7a3de7c047bf72050cd4b7521a1">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.6.1_4e5625f68d449457d864ec70e50c95192199d013/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="a76a6983a23788b3689524d4bed763955afbd306">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.6.1_80cf6b11e4cd0e7de6fc41105fa2dec6831d79dd/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.1_c27c46747873a210bca4d6118ac83137410feda8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="f6aa7c76cbaa867e05dbad0afab1ef0e65c4e55f">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.6.1_7ff6f68f636582a857241934096198fe2b3eb9e4/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="2d6b004fb9182f00cddd6f518f985776783fb81f">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d827e36d69e6da704e11c5aa418c8e2f238e10f7/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="90be14317e3f26d18438e8dbf8544500d1dfe07f">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-9.6.1_4af12ff2ab2996c2490c3d5baeb640dd89525896/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.1_feeb380803ca6fad7bec9f4e7c6c8167627d42bf/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="47bbb3ec4b31ba71e125241c090dabe70cbb4de7">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.1_d4a2c6e58a45728733fc5f8069cf018edc2a05d8/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_e066f2b5d4e9e55922ec56f85eec97c7d3714ac6/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.6.1_4820bc988ba5e7884315cf8d8261d450cf506c9f/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.1_c190431a98490c606d16294260d573de2419ce0e/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="4a36600281a648769411ef642c331851732bf29e">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.1_6b09c923f1f510edf3215f62781a782362cde6be/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
-        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="24.0.3"
-        sha1="ac8365c87591065db07f7bac8551504504832cd4">
-        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.1_242fce0c39348c9469cb5055861a071dcf228077/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -273,12 +21,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/mediarouter-v7/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-mediarouter-v7-24.0.0_dda30c90b99b158f70897ffdc469c8aed1129e53/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.1_5e7c60a86f82fcbb400da3f1304156be9eb5029c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="8ebae43cd06058e99e08c8b4d305b72f2b9927c6">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-plus-9.6.1_126919eb3fa7225957b927f861f629bc18c6dfab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage-common/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="159494eb362396d073d8c922b77e40c0da5fc5bc">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-common-9.6.1_836437b1f4419b828f93b4385080cc81072ebe3e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-config/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cf2c4e6607c77b0e671dc5ca252c5ea0d9c1ce0d">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-config-9.6.1_eada99e5f89382e21f0cae8660751b885286169e/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -309,6 +93,33 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a136366045678579300d161de97c2211c4c4f7a0">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-cast-9.6.1_24516b4842b7ed4ddccbcda42044a23920b930af/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-places/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="cdddf21e0a8205e9955661061d1735ed10e44a7b">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-places-9.6.1_58c77d9bf508173db317ff2a97aadcd047f295ab/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="da3f763afd39da1c947d9442847c837e9182a09f">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.6.1_e3bc752995f33636f05d82b3eca64a6adec3daf2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -318,12 +129,48 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_7f97e69f4c09544274fca290f1e42a6f8ae7ffea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_0e41fd7084a618490d0e91609375e6052032408c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-instantapps/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="babb25794a7599069d34705038744c5760a9a88c">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-instantapps-9.6.1_26ae3151f04d4501cc7452870a4fbd4b4c560691/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-crash/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4df40545c9b875855f3dd9d4928e5d07f07c20ba">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-crash-9.6.1_6319904feedc5f0a3eea25d449611bd4c737f0ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tagmanager-api/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f0e96478ca3147bc588aadb9ae467d85b42473cc">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tagmanager-api-9.6.1_e53492e054bb99873af7066f57d093c9806ede07/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -372,6 +219,33 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="b75ecdd04a37d31b4a0da2729fc5c558962a529b">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-9.6.1_b5a75cd73aff55f37bb8b86fe92e2d7246f2cc0f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.1_fb587b829979cc8728e57141b70babec6c993a51/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="465f40f840e583f8b7421a3aacf3fbf08c28f00a">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.1_739e29b6a49d4c79fedd8965628d82d21dcc5552/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -396,6 +270,15 @@
         revision="24.0.3"
         sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_0a05c81594e7a743402cdca799763363eb6b784e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_c91962ecedf4110b1a0bfe07fcfce6f24a79082b/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -426,12 +309,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c828add497d2b7a3de7c047bf72050cd4b7521a1">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-safetynet-9.6.1_4e5625f68d449457d864ec70e50c95192199d013/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_0e451d569b56948e4b580a98271677929afbedb4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="a76a6983a23788b3689524d4bed763955afbd306">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-fitness-9.6.1_80cf6b11e4cd0e7de6fc41105fa2dec6831d79dd/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -450,6 +351,15 @@
         revision="24.0.3"
         sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_06a5ff83cb2afe834dd3f3b160550ecce5dac62a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-messaging/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="80dd8bea08bc5fe10b10a3243b8279c856ccc690">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-messaging-9.6.1_c27c46747873a210bca4d6118ac83137410feda8/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -498,12 +408,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f6aa7c76cbaa867e05dbad0afab1ef0e65c4e55f">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-nearby-9.6.1_7ff6f68f636582a857241934096198fe2b3eb9e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="187d2da62a2079e38f63c5451567324f67fe53d8">
+        sha1="302993293579bf020d75e0e05ada39193851f72a">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d69e36a0d88aaabb01e5eabca9f4dcd21f1b4bbd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="fffa91993d4ce608d7271a756b7d62b4cfa25465">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d827e36d69e6da704e11c5aa418c8e2f238e10f7/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -534,6 +462,15 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-awareness/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="90be14317e3f26d18438e8dbf8544500d1dfe07f">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-awareness-9.6.1_4af12ff2ab2996c2490c3d5baeb640dd89525896/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -543,12 +480,30 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.1_feeb380803ca6fad7bec9f4e7c6c8167627d42bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="cc39b4bcc9e7062891db90d5a752fa9e4986f447">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-appindexing-9.6.1_eab2aada07fc776e18db4793ee9b871092e21315/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="47bbb3ec4b31ba71e125241c090dabe70cbb4de7">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-ads-9.6.1_d4a2c6e58a45728733fc5f8069cf018edc2a05d8/classes.dex" />
     </item>
     <item
         is-multidex="true"
@@ -597,6 +552,24 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_e066f2b5d4e9e55922ec56f85eec97c7d3714ac6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-auth-module/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6ffe8b28ab61e5ee92ab9431a220379790c71ddf">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-auth-module-9.6.1_4820bc988ba5e7884315cf8d8261d450cf506c9f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
@@ -615,12 +588,39 @@
     </item>
     <item
         is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-storage/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="8c6ef5bd4072f8cda2b89d8356ea7d8acd0683aa">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-storage-9.6.1_c190431a98490c606d16294260d573de2419ce0e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.1_6b09c923f1f510edf3215f62781a782362cde6be/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
         jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
         sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.1_e9630f26a868dbd5f9006fe315707135dd23eb7f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/exploded-aar/com.google.firebase/firebase-database-connection/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.3"
+        sha1="ac8365c87591065db07f7bac8551504504832cd4">
+        <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-database-connection-9.6.1_242fce0c39348c9469cb5055861a071dcf228077/classes.dex" />
     </item>
     <item
         is-multidex="true"
