@@ -281,7 +281,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onConnected(Bundle connectionHint)
     {
-        /*
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
         {
             if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
@@ -300,8 +300,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             latit = (TextView) findViewById(R.id.latitudeTextView);
             cityText = (TextView) findViewById(R.id.CityTextView);
 
-            longii.setText(Double.toString(longitude));
-            latit.setText(Double.toString(latitude));
+            longii.setText("Longitude : "+Double.toString(longitude));
+            latit.setText("Latitude : "+Double.toString(latitude));
 
             Geocoder geocoder = new Geocoder(this, Locale.getDefault());
             try
@@ -309,13 +309,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
                Address A1 =  addresses.get(0);
                 City =  A1.getSubLocality();
-                cityText.setText(City);
+                cityText.setText("City : "+City);
             }
             catch (IOException e)
             {
                 e.printStackTrace();
             }
-        }*/
+        }
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED)
         {
             Location lastLocation = LocationServices.FusedLocationApi.getLastLocation(mGoogleApiClient);
