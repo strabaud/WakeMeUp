@@ -14,13 +14,19 @@ import android.database.sqlite.SQLiteDatabase.CursorFactory;
 
 public class SQLiteDB extends SQLiteOpenHelper {
 
+
+    // VARIABLES POUR TABLE ACTIVITES
     private static final String TABLE_ACTIVITIES = "table_activities";
     private static final String COL_ID = "ID";
     private static final String COL_ACTIVITY1 = "ACTIVITY1";
     private static final String COL_ACTIVITY2 = "ACTIVITY2";
     private static final String COL_ACTIVITY3 = "ACTIVITY3";
 
-    private static final String CREATE_DB = "CREATE TABLE " + TABLE_ACTIVITIES + " ("
+    // VARIABLES POUR TABLE HEURES DE SOMMEIL
+
+
+    //STRING REQUETE CREATION HOBBIES
+    private static final String CREATE_DB_HOBBIES = "CREATE TABLE " + TABLE_ACTIVITIES + " ("
             + COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COL_ACTIVITY1 + " TEXT NOT NULL, "
             + COL_ACTIVITY2 + " TEXT NOT NULL, "+ COL_ACTIVITY3 + " TEXT NOT NULL );";
 
@@ -30,15 +36,15 @@ public class SQLiteDB extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        //Création table à partir de CREATE_BDD
-        db.execSQL(CREATE_DB);
+        //Création table à partir de CREATE_DB_HOBBIES
+        db.execSQL(CREATE_DB_HOBBIES);
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
-        db.execSQL("DROP TABLE " + TABLE_ACTIVITIES + ";");
-        onCreate(db);
+        //db.execSQL("DROP TABLE " + TABLE_ACTIVITIES + ";");
+        //onCreate(db);
     }
 
 }
