@@ -155,10 +155,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         WeekDaysEdit = (TextView) findViewById(R.id.WeekDays);
         WeekDaysEdit.setOnClickListener(this);
 
-        SettingsEdit = (ImageButton) findViewById(R.id.imageButton1);
+        SettingsEdit = (ImageButton) findViewById(R.id.settings_button);
         SettingsEdit.setOnClickListener(this);
 
-        btnSpeak = (Button) findViewById(R.id.button1);
+        btnSpeak = (Button) findViewById(R.id.button_speak);
         btnSpeak.setOnClickListener(this);
         System.out.println("Passage dans OnCreate");
 
@@ -220,22 +220,35 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     // Methode associé à l'appui de l'EditText
     public void onClick(View view) {
-        if (R.id.WeekDays == view.getId()) {
-            Intent SetTimerActivity = new Intent(this, TimerActivity.class);
-            //on passe l'intention au système
-            startActivity(SetTimerActivity);
+
+
+
+        switch (view.getId()){
+            case R.id.WeekDays:
+                Intent SetTimerActivity = new Intent(this, TimerActivity.class);
+                //on passe l'intention au système
+                startActivity(SetTimerActivity);
+                break;
+
+            case R.id.WeekEndDays:
+
+                break;
+
+            case R.id.settings_button:
+                Intent SetSettings = new Intent(this, Settings.class);
+                //on passe l'intention au système
+                startActivity(SetSettings);
+                break;
+
+            case R.id.button_speak:
+                speakOut();
+                break;
+
+            default:
+                Log.e("Bouton", "clic pas implémenté !");
+                break;
         }
-        else if (R.id.imageButton1 == view.getId()) {
-            Intent SetSettings = new Intent(this, Settings.class);
-            //on passe l'intention au système
-            startActivity(SetSettings);
-        }
-        else if (R.id.button1 == view.getId()) {
-            speakOut();
-        }
-        else {
-            Log.e("Bouton", "clic pas implémenté !");
-        }
+
     }
 
 

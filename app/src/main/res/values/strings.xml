@@ -14,4 +14,5 @@
     <string name="longitude">Longitude</string>
     <string name="city">City</string>
     <string name="speaker">Speak for me !</string>
+    <string name="new_time">NEW</string>
 </resources>

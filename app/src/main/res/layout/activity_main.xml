@@ -14,7 +14,7 @@
 
 
     <ImageButton
-        android:id="@+id/imageButton1"
+        android:id="@+id/settings_button"
         android:layout_columnSpan="2"
         android:layout_row="0"
         android:layout_gravity="right"
@@ -41,8 +41,8 @@
         android:layout_row="2"
         android:layout_columnSpan="2" />
 
-    <TextView
 
+    <TextView
         android:textColor="@android:color/darker_gray"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -50,13 +50,12 @@
         android:layout_row="3"
         android:layout_column="0"
         android:text="@string/weekDays"
-        android:layout_gravity="center"
+        android:layout_gravity="left"
         android:textSize="20dp" />
 
-
     <EditText
-        android:ems="15"
         android:id="@+id/WeekDays"
+        android:ems="15"
         android:textColor="@android:color/holo_orange_light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -65,7 +64,9 @@
         android:layout_gravity="center"
         android:textSize="40dp"
         android:focusable="false"
-        android:text="NEW"/>
+        android:text="@string/new_time"/>
+
+
     <TextView
         android:textColor="@android:color/darker_gray"
         android:layout_width="wrap_content"
@@ -73,17 +74,21 @@
         android:layout_row="5"
         android:layout_column="0"
         android:text="@string/weekend"
-        android:layout_gravity="center"
+        android:layout_gravity="left"
         android:textSize="20dp" />
-    <TextView
+
+    <EditText
+        android:id="@+id/WeekEndDays"
+        android:ems="15"
         android:textColor="@android:color/holo_orange_light"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="6"
         android:layout_column="0"
-        android:text="10:30"
-        android:layout_gravity="top"
-        android:textSize="40dp" />
+        android:layout_gravity="center"
+        android:textSize="40dp"
+        android:focusable="false"
+        android:text="@string/new_time"/>
 
 
     <TextView
@@ -120,7 +125,7 @@
         android:textSize="20dp" />
 
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/button_speak"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/speaker"

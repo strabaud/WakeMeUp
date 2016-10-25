@@ -12,7 +12,7 @@ import android.util.Log;
 public class TimerActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TimePicker timePicker1;
-    private Button OkButton;
+    private Button okButton;
     public int hour, min;
 
     @TargetApi(Build.VERSION_CODES.M)
@@ -22,7 +22,7 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
         setContentView(R.layout.activity_timer);
 
         timePicker1 = (TimePicker) findViewById(R.id.timePicker1);
-        OkButton = (Button)findViewById(R.id.bt_Ok);
+        okButton = (Button)findViewById(R.id.bt_Ok);
 
         if (Build.VERSION.SDK_INT >= 23){
 
@@ -34,7 +34,7 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
             min = timePicker1.getCurrentMinute();
         }
 
-         OkButton.setOnClickListener(this);
+         okButton.setOnClickListener(this);
     }
 
     // Methode associé à l'appui de l'EditText
