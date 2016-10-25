@@ -11,7 +11,7 @@ import android.widget.TimePicker;
 import android.view.View;
 import android.util.Log;
 
-public class TimerActivity extends Activity implements View.OnClickListener {
+public class TimerActivity extends AppCompatActivity implements View.OnClickListener {
 
     private TimePicker timePicker1;
     private Button okButton;
@@ -51,17 +51,18 @@ public class TimerActivity extends Activity implements View.OnClickListener {
 
             final Intent intent = getIntent();
 
-            String message = intent.getStringExtra("Week");
+            //String message = intent.getStringExtra("Week");
             String timeToReturn= toString(hour,min);
             intentResult= new Intent();
             intentResult.putExtra(timeToReturn,"Week");
-            TimerActivity.this.setResult(RESULT_OK,intentResult);
+            TimerActivity.this.setResult(TimerActivity.RESULT_OK,intentResult);
             TimerActivity.this.finish();
         }
         else
         {
             Log.e("Bouton","clic pas implémenté !");
         }
+
     }
 
     private String toString(int hour, int min){

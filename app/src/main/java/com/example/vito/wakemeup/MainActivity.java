@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private final int MY_PERMISSION_REQUEST_FINE_LOCATION = 101;
 
     // VARIABLES ENVOI RECUP DONNEES INTENT
-    final String EXTRA_TIME="Week";
+    static final String EXTRA_TIME="Week";
     final String EXTRA_WE_TIME="Week-End";
 
     // VARIABLES LOCATION & WEATHER
@@ -189,8 +189,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 Intent SetTimerActivity = new Intent(MainActivity.this, TimerActivity.class);
                 //on passe l'intention au système
                 EditText weekDays = (EditText)findViewById(R.id.WeekDays);
-                SetTimerActivity.putExtra(EXTRA_TIME, weekDays.toString());
-                startActivityForResult(SetTimerActivity,0);
+                Bundle bundle = new Bundle();
+                bundle.putString("Week", weekDays.toString());
+
+                SetTimerActivity.putExtras(bundle);
+                startActivityForResult(SetTimerActivity,1);
                 break;
 
             case R.id.WeekEndDays:
@@ -330,7 +333,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             longii.setText("Longitude : "+Double.toString(longitude));
             latit.setText("Latitude : "+Double.toString(latitude));
-            cityText.setText(City);
+
 
             Geocoder geocoder = new Geocoder(this, Locale.getDefault());
             try
@@ -343,6 +346,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 else{
                     City = A1.getLocality();
                 }
+                cityText.setText(City);
             }
             catch (IOException e)
             {
@@ -387,17 +391,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                              **/
     @Override
     protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (requestCode == 1)
+            if( resultCode==RESULT_OK ) {
+                String s = data.getExtras().getString("Week");
+                EditText weekDays = (EditText)findViewById(R.id.WeekDays);
+                weekDays.setText(s);
+            }
+            else{
 
-        if( resultCode==RESULT_OK ) {
-            String s = data.getStringExtra(EXTRA_TIME);
-            EditText weekDays = (EditText)findViewById(R.id.WeekDays);
-            weekDays.setText(s);
-        }
+            }
         else{
 
         }
 
-        super.onActivityResult(requestCode, resultCode, data);
     }
 
                             /*
@@ -440,6 +446,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             tts(entry.getKey());
 
             ttsSilence(averageWaitingTime);
+
             // DESCRIPTION
             tts(description +" "+Integer.toString(i));
             ttsSilence(shortWaintingTime);
