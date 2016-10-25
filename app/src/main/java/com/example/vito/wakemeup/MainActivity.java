@@ -330,6 +330,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             longii.setText("Longitude : "+Double.toString(longitude));
             latit.setText("Latitude : "+Double.toString(latitude));
+            cityText.setText(City);
 
             Geocoder geocoder = new Geocoder(this, Locale.getDefault());
             try
@@ -399,8 +400,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onActivityResult(requestCode, resultCode, data);
     }
 
-
-
                             /*
 
                             SPEAKOUT
@@ -417,6 +416,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         String title = "Titre de l'article ";
         String description = "Description ";
         int averageWaitingTime=1000;
+        int shortWaintingTime=500;
 
         /*
         A VOIR SI ON UTILISE OU PAS
@@ -432,11 +432,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         ttsSilence(averageWaitingTime);
 
         int i =1;
-        for (Map.Entry<String, String> entry : map.entrySet())
+        for (Map.Entry<String, String> entry : map.entrySet()) // getKey() de entry permet d'avoir
         {
-            tts(title +" "+Integer.toString(i)+" "+ entry.getKey());
+            // TITRE
+            tts(title +" "+Integer.toString(i));
+            ttsSilence(shortWaintingTime);
+            tts(entry.getKey());
+
             ttsSilence(averageWaitingTime);
-            tts(description +" "+Integer.toString(i)+" "+ entry.getValue());
+            // DESCRIPTION
+            tts(description +" "+Integer.toString(i));
+            ttsSilence(shortWaintingTime);
+            tts(entry.getValue());
             ttsSilence(averageWaitingTime);
             i++;
         }
