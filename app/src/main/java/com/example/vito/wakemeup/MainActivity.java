@@ -2,9 +2,7 @@ package com.example.vito.wakemeup;
 
 import android.Manifest;
 import android.annotation.TargetApi;
-import android.content.Context;
 import android.content.pm.PackageManager;
-import android.icu.util.ValueIterator;
 import android.location.Address;
 import android.location.Geocoder;
 import android.location.Location;
@@ -13,13 +11,13 @@ import android.location.LocationManager;
 import android.os.AsyncTask;
 import android.os.Build;
 import android.speech.tts.TextToSpeech;
-import android.speech.tts.Voice;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.os.Bundle;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 import android.view.View;
 import android.content.Intent;
@@ -30,7 +28,6 @@ import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationServices;
 
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -38,16 +35,11 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 import org.xml.sax.SAXException;
-import org.xml.sax.XMLReader;
-import org.xmlpull.v1.XmlPullParser;
 
-import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -55,7 +47,6 @@ import java.util.List;
 import java.util.Locale;
 import java.util.Map;
 
-import javax.net.ssl.HttpsURLConnection;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -63,7 +54,11 @@ import javax.xml.parsers.ParserConfigurationException;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener, TextToSpeech.OnInitListener, LocationListener, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
 
-    // create a editText to get the click option
+                                                    /*
+
+                                                    VARIABLES
+
+                                                     */
     TextView WeekDaysEdit;
     ImageButton SettingsEdit;
     ArrayList<Time> alarms;
@@ -71,24 +66,29 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextToSpeech tts;
 
     GoogleApiClient mGoogleApiClient;
+    //**************************************************
+    private final int MY_PERMISSION_REQUEST_FINE_LOCATION = 101;
 
+    // VARIABLES ENVOI RECUP DONNEES INTENT
+    final String EXTRA_TIME="Week";
+    final String EXTRA_WE_TIME="Week-End";
+
+    // VARIABLES LOCATION & WEATHER
     TextView longii;
     TextView latit;
     TextView cityText;
-    //**************************************************
-    private final int MY_PERMISSION_REQUEST_FINE_LOCATION = 101;
     protected LocationManager locationManager;
     protected LocationListener locationListener;
     Location mLastLocation; // location
     double latitude; // latitude
     double longitude; // longitude
     String City = "";
-   // String strURL = "http://api.openweathermap.org/data/2.5/weather?q=Paris&appid=288c4c3f50e07e9188bdef93c039687c";
     String weatherFile = "a";
     String temperature = "";
-    String MinTemp ="";
-    String MaxTem ="";
-    String weather="";
+    String MinTemp = "";
+    String MaxTem = "";
+    String weather = "";
+    // String strURL = "http://api.openweathermap.org/data/2.5/weather?q=Paris&appid=288c4c3f50e07e9188bdef93c039687c";
     //****************************************************
     String newsFile = "";
     Map<String, String> map = new HashMap<String, String>();
@@ -169,43 +169,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    private void speakOut()
-    {
-        Double tempDouble = Double.valueOf(temperature);
-        int tempInt = tempDouble.intValue();
-        String finalTemp = String.valueOf(tempInt);
-        String W = weather;
-        String wakeUp = "Bonjour sylvain ! c'est l'heure de te réveiller ! Actuellement, il fait " + finalTemp + " degrés dans la ville de " +City+" , et le temps est " + W;
-        String newsToday ="Voici les nouvelles pour aujourd'hui ";
-        String title = "Titre de l'article ";
-        String description = "Description ";
-        int averageWaitingTime=1000;
-
-        /*
-        A VOIR SI ON UTILISE OU PAS
-        //Voice v1 = tts.getVoice();
-        //String name = v1.getName();
-         */
-
-
-/// Watch deprecated functions after VARIABLES DECLARATIONS to understand those functions
-            tts(wakeUp);
-            ttsSilence(averageWaitingTime);
-            tts(newsToday);
-            ttsSilence(averageWaitingTime);
-
-        int i =1;
-        for (Map.Entry<String, String> entry : map.entrySet())
-        {
-            tts(title +" "+Integer.toString(i)+" "+ entry.getKey());
-            ttsSilence(averageWaitingTime);
-            tts(description +" "+Integer.toString(i)+" "+ entry.getValue());
-            ttsSilence(averageWaitingTime);
-            i++;
-        }
-
-    }
-
     protected void onStart() {
         super.onStart();
         mGoogleApiClient.connect();
@@ -218,20 +181,25 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    // Methode associé à l'appui de l'EditText
+    // Methode associé
     public void onClick(View view) {
-
-
 
         switch (view.getId()){
             case R.id.WeekDays:
-                Intent SetTimerActivity = new Intent(this, TimerActivity.class);
+                Intent SetTimerActivity = new Intent(MainActivity.this, TimerActivity.class);
                 //on passe l'intention au système
-                startActivity(SetTimerActivity);
+                EditText weekDays = (EditText)findViewById(R.id.WeekDays);
+                SetTimerActivity.putExtra(EXTRA_TIME, weekDays.toString());
+                startActivityForResult(SetTimerActivity,0);
                 break;
 
             case R.id.WeekEndDays:
 
+
+                Intent SetTimerActivity2 = new Intent(MainActivity.this, TimerActivity.class);
+                //SetTimerActivity2.putExtra(EXTRA_WE_TIME,weekEnd.getText().toString());
+                //on passe l'intention au système
+                startActivity(SetTimerActivity2);
                 break;
 
             case R.id.settings_button:
@@ -341,6 +309,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onConnected(Bundle connectionHint)
     {
 
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
         {
             if (checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
@@ -366,9 +335,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             try
             {
                 List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
-               Address A1 =  addresses.get(0);
-                City =  A1.getLocality();
-                cityText.setText("City : "+City);
+                Address A1 =  addresses.get(0);
+                if(A1.getSubLocality()!=null){
+                    City = A1.getSubLocality();
+                }
+                else{
+                    City = A1.getLocality();
+                }
             }
             catch (IOException e)
             {
@@ -381,21 +354,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             latitude = lastLocation.getLatitude();
             longitude = lastLocation.getLongitude();
-            Geocoder geocoder = new Geocoder(this, Locale.getDefault());
             try
             {
-                List<Address> addresses = geocoder.getFromLocation(latitude, longitude, 1);
-                Address A1 =  addresses.get(0);
-                if(A1.getSubLocality()!=null){
-                    City = A1.getSubLocality();
-                }
-                else{
-                    City = A1.getLocality();
-                }
                 new WeatherTask().execute();
-
             }
-            catch (IOException e)
+            catch (Exception e)
             {
                 e.printStackTrace();
             }
@@ -415,6 +378,71 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onConnectionFailed(ConnectionResult connectionResult) {
 
     }
+
+                            /*
+                            *
+                            RECUPERATION DONNEES INTENT
+                             *
+                             **/
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+
+        if( resultCode==RESULT_OK ) {
+            String s = data.getStringExtra(EXTRA_TIME);
+            EditText weekDays = (EditText)findViewById(R.id.WeekDays);
+            weekDays.setText(s);
+        }
+        else{
+
+        }
+
+        super.onActivityResult(requestCode, resultCode, data);
+    }
+
+
+
+                            /*
+
+                            SPEAKOUT
+
+                             */
+    private void speakOut()
+    {
+        Double tempDouble = Double.valueOf(temperature);
+        int tempInt = tempDouble.intValue();
+        String finalTemp = String.valueOf(tempInt);
+        String W = weather;
+        String wakeUp = "Bonjour sylvain ! c'est l'heure de te réveiller ! Actuellement, il fait " + finalTemp + " degrés dans la ville de " +City+" , et le temps est " + W;
+        String newsToday ="Voici les nouvelles pour aujourd'hui ";
+        String title = "Titre de l'article ";
+        String description = "Description ";
+        int averageWaitingTime=1000;
+
+        /*
+        A VOIR SI ON UTILISE OU PAS
+        //Voice v1 = tts.getVoice();
+        //String name = v1.getName();
+         */
+
+
+/// Watch deprecated functions after VARIABLES DECLARATIONS to understand those functions
+        tts(wakeUp);
+        ttsSilence(averageWaitingTime);
+        tts(newsToday);
+        ttsSilence(averageWaitingTime);
+
+        int i =1;
+        for (Map.Entry<String, String> entry : map.entrySet())
+        {
+            tts(title +" "+Integer.toString(i)+" "+ entry.getKey());
+            ttsSilence(averageWaitingTime);
+            tts(description +" "+Integer.toString(i)+" "+ entry.getValue());
+            ttsSilence(averageWaitingTime);
+            i++;
+        }
+
+    }
+
 
     public class WeatherTask extends AsyncTask<String, Void, String>
     {

@@ -1,6 +1,8 @@
 package com.example.vito.wakemeup;
 
 import android.annotation.TargetApi;
+import android.app.Activity;
+import android.content.Intent;
 import android.os.Build;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -9,17 +11,19 @@ import android.widget.TimePicker;
 import android.view.View;
 import android.util.Log;
 
-public class TimerActivity extends AppCompatActivity implements View.OnClickListener {
+public class TimerActivity extends Activity implements View.OnClickListener {
 
     private TimePicker timePicker1;
     private Button okButton;
     public int hour, min;
+    public Intent intentResult;
 
     @TargetApi(Build.VERSION_CODES.M)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_timer);
+
 
         timePicker1 = (TimePicker) findViewById(R.id.timePicker1);
         okButton = (Button)findViewById(R.id.bt_Ok);
@@ -43,13 +47,28 @@ public class TimerActivity extends AppCompatActivity implements View.OnClickList
 
         if(R.id.bt_Ok == view.getId())
         {
-            Alarms.getInstance().Create(hour, min);
-            this.finish();
+            //Alarms.getInstance().Create(hour, min);
+
+            final Intent intent = getIntent();
+
+            String message = intent.getStringExtra("Week");
+            String timeToReturn= toString(hour,min);
+            intentResult= new Intent();
+            intentResult.putExtra(timeToReturn,"Week");
+            TimerActivity.this.setResult(RESULT_OK,intentResult);
+            TimerActivity.this.finish();
         }
         else
         {
             Log.e("Bouton","clic pas implémenté !");
         }
+    }
+
+    private String toString(int hour, int min){
+        this.hour=hour;
+        this.min=min;
+        String string= this.hour+":"+this.min;
+        return string;
     }
 
 }
