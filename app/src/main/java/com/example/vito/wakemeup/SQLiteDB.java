@@ -4,7 +4,7 @@ package com.example.vito.wakemeup;
  * Created by vito on 19/10/16.
  *
  *
- * Création de notre BDD qui regroupe toutes nos activités
+ * Création de notre BDD qui regroupe les tables activités et heures de dodo par nuit
  */
 
 import android.content.Context;
