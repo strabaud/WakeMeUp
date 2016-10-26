@@ -75,7 +75,7 @@ public class TransactionsDB {
 
     public Hobbies getHobbiesById(int id){
         //Récupère dans un Cursor les valeur correspondant
-        Cursor c = db.query(TABLE_ACTIVITIES, new String[] {COL_ID, COL_ACTIVITY1, COL_ACTIVITY2, COL_ACTIVITY3}, COL_ID + " LIKE \"" + id +"\"", null, null, null, null);
+        Cursor c = db.query(TABLE_ACTIVITIES, new String[] {COL_ID, COL_ACTIVITY1, COL_ACTIVITY2, COL_ACTIVITY3}, COL_ID + " LIKE \"" + id +"\"",null,null,null,null);
         return cursorToHobbies(c);
     }
 

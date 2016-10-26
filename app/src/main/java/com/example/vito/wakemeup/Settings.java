@@ -18,7 +18,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
     private Spinner spinner2;
     private Spinner spinner3;
     String[] HobbiesList = new String[]{
-            "METEO","SPORT","ACTUALITE"
+            "CHOISIR","SPORT","METEO","ACTUALITE"
     };
     String defaultActivity="CHOISIR";
     Hobbies hobbies;
@@ -32,6 +32,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
 
         try {
             transactionsDB = new TransactionsDB(this);
+            transactionsDB.open();
         }
         catch (Exception e){
 
@@ -46,18 +47,18 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
 
         if(hobbiesFromDB != null){
 
-            //hobbies = new Hobbies(hobbiesFromDB.getActivity1(),hobbiesFromDB.getActivity2(),hobbiesFromDB.getActivity3());
-            hobbies = new Hobbies("METEO", "METEO", "SPORT");
+            hobbies = new Hobbies(hobbiesFromDB.getActivity1(),hobbiesFromDB.getActivity2(),hobbiesFromDB.getActivity3());
+            //hobbies = new Hobbies("CHOISIR", "CHOISIR", "CHOISIR");
 
         }
         else{
 
             //hobbies = new Hobbies("Activité 1", "Activité 2", "Activité 3");
             //On cree une ligne pour tester
-            hobbies = new Hobbies("METEO", "METEO", "SPORT");
+            hobbies = new Hobbies("CHOISIR", "CHOISIR", "CHOISIR");
 
             //ouverture db pour insert
-            transactionsDB.open();
+
             //insert
             transactionsDB.insertHobbies(hobbies);
 
@@ -108,6 +109,9 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
         if(R.id.bt_Ok == view.getId())
         {
 
+            Hobbies finalHobbies = new Hobbies(spinner1.getSelectedItem().toString(),spinner2.getSelectedItem().toString(),spinner3.getSelectedItem().toString());
+            //transactionsDB.updateHobbies(1,finalHobbies);
+            //Log.println(Log.INFO,"tag",hobbiesFromDB.getActivity1());
 
             this.finish();
         }
