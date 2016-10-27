@@ -43,7 +43,7 @@ public class TransactionsDB {
         db.close();
     }
 
-    public SQLiteDatabase getBDD(){
+    public SQLiteDatabase getDB(){
         return db;
     }
 
@@ -59,8 +59,8 @@ public class TransactionsDB {
     }
 
     public int updateHobbies(int id, Hobbies hobbies){
-        //La mise à jour d'un livre dans la BDD fonctionne plus ou moins comme une insertion
-        //il faut simple préciser quelle livre on doit mettre à jour grâce à l'ID
+        //La mise à jour d'un hobbie dans la DB fonctionne plus ou moins comme une insertion
+        //il faut simple préciser quelle hobbie on doit mettre à jour grâce à l'ID
         ContentValues values = new ContentValues();
         values.put(COL_ACTIVITY1, hobbies.getActivity1());
         values.put(COL_ACTIVITY2, hobbies.getActivity2());
@@ -79,7 +79,7 @@ public class TransactionsDB {
         return cursorToHobbies(c);
     }
 
-    //Cette méthode permet de convertir un cursor
+    //Cette méthode permet de convertir un cursor en hobbie
     private Hobbies cursorToHobbies(Cursor c){
         //si aucun élément n'a été retourné dans la requête, on renvoie null
         if (c.getCount() == 0)
@@ -87,7 +87,7 @@ public class TransactionsDB {
 
         //Sinon on se place sur le premier élément
         c.moveToFirst();
-        //On créé un livre
+        //On créé un hobbie
         Hobbies hobbies = new Hobbies();
         //on lui affecte toutes les infos grâce aux infos contenues dans le Cursor
         hobbies.setId(c.getInt(NUM_COL_ID));
