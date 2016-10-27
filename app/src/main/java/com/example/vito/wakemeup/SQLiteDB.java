@@ -32,12 +32,12 @@ public class SQLiteDB extends SQLiteOpenHelper {
     private static final String SLEEP_TIME2 = "TIME2";
 
     //STRING REQUETE CREATION HOBBIES
-    private static final String CREATE_DB_HOBBIES = "CREATE TABLE IF NOT EXISTS" + TABLE_ACTIVITIES + " ("
-            + COL_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + COL_ACTIVITY1 + " TEXT NOT NULL, "
+    private static final String CREATE_DB_HOBBIES = "CREATE TABLE IF NOT EXISTS " + TABLE_ACTIVITIES + " ("
+            + COL_ID + " INTEGER PRIMARY KEY , " + COL_ACTIVITY1 + " TEXT NOT NULL, "
             + COL_ACTIVITY2 + " TEXT NOT NULL, "+ COL_ACTIVITY3 + " TEXT NOT NULL );";
 
     //STRING REQUETE CREATION HEURES DORMIES
-    private static final String CREATE_DB_SLEEP = "CREATE TABLE IF NOT EXISTS" + TABLE_SLEEP + " ("
+    private static final String CREATE_DB_SLEEP = "CREATE TABLE IF NOT EXISTS " + TABLE_SLEEP + " ("
             + SLEEP_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " + SLEEP_WEEK + " INTEGER NOT NULL, "
             + SLEEP_TIME1 + " TEXT NOT NULL, "+ SLEEP_TIME2 + " TEXT NOT NULL );";
 

@@ -58,7 +58,6 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
             hobbies = new Hobbies("CHOISIR", "CHOISIR", "CHOISIR");
 
             //ouverture db pour insert
-
             //insert
             transactionsDB.insertHobbies(hobbies);
 
@@ -75,19 +74,19 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
         spinner1 = (Spinner) findViewById(R.id.spinner1);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setAdapter(adapter1);
-        setSpinText(spinner1, hobbies.getActivity1());
+        spinner1.setSelection(adapter1.getPosition(hobbies.getActivity1()));
 
         ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,HobbiesList);
         spinner2 = (Spinner) findViewById(R.id.spinner2);
         adapter2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner2.setAdapter(adapter2);
-        setSpinText(spinner1, hobbies.getActivity2());
+        spinner2.setSelection(adapter2.getPosition(hobbies.getActivity2()));
 
         ArrayAdapter<String> adapter3 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1,HobbiesList);
         spinner3 = (Spinner) findViewById(R.id.spinner3);
         adapter3.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner3.setAdapter(adapter3);
-        setSpinText(spinner1, hobbies.getActivity3());
+        spinner3.setSelection(adapter3.getPosition(hobbies.getActivity3()));
 
     }
 
@@ -110,7 +109,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
         {
 
             Hobbies finalHobbies = new Hobbies(spinner1.getSelectedItem().toString(),spinner2.getSelectedItem().toString(),spinner3.getSelectedItem().toString());
-            //transactionsDB.updateHobbies(1,finalHobbies);
+            transactionsDB.updateHobbies(1,finalHobbies);
             //Log.println(Log.INFO,"tag",hobbiesFromDB.getActivity1());
 
             this.finish();

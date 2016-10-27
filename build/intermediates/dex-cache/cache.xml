@@ -421,7 +421,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="302993293579bf020d75e0e05ada39193851f72a">
+        sha1="112ee258fbfcdf1d56f92e732d32e5a0f837884a">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_d69e36a0d88aaabb01e5eabca9f4dcd21f1b4bbd/classes.dex" />
     </item>
     <item
@@ -430,7 +430,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.3"
-        sha1="fffa91993d4ce608d7271a756b7d62b4cfa25465">
+        sha1="cb396a9e53e8c5c6ff0bc2ac7e7b453cd66cc037">
         <dex dex="/home/vito/Documents/Programs/android-projects/WakeMeUp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d827e36d69e6da704e11c5aa418c8e2f238e10f7/classes.dex" />
     </item>
     <item

@@ -51,6 +51,7 @@ public class TransactionsDB {
         //Création d'un ContentValues (fonctionne comme une HashMap)
         ContentValues values = new ContentValues();
         //on lui ajoute une valeur associé à une clé (qui est le nom de la colonne dans laquelle on veut mettre la valeur)
+        values.put(COL_ID,1);
         values.put(COL_ACTIVITY1, hobbies.getActivity1());
         values.put(COL_ACTIVITY2, hobbies.getActivity2());
         values.put(COL_ACTIVITY3, hobbies.getActivity3());
