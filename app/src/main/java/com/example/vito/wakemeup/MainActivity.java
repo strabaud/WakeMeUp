@@ -2,6 +2,8 @@ package com.example.vito.wakemeup;
 
 import android.Manifest;
 import android.annotation.TargetApi;
+import android.app.Dialog;
+import android.app.TimePickerDialog;
 import android.content.pm.PackageManager;
 import android.location.Address;
 import android.location.Geocoder;
@@ -22,6 +24,7 @@ import android.widget.TextView;
 import android.view.View;
 import android.content.Intent;
 import android.widget.ImageButton;
+import android.widget.TimePicker;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -59,7 +62,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                                     VARIABLES
 
                                                      */
-    TextView WeekDaysEdit;
+    //TextView WeekDaysEdit;
     ImageButton SettingsEdit;
     ArrayList<Time> alarms;
     Button btnSpeak;
@@ -88,6 +91,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String MinTemp = "";
     String MaxTem = "";
     String weather = "";
+
+    //VARIABLES TIMEPICKER
+    private final int WEEK_TIME_DIALOG_ID = 200;
+    private final int WEEK_END_TIME_DIALOG_ID = 300;
+    TextView WeekDaysEdit;
+    TextView weekEndDaysEdit;
+    int hourWeek,minuteWeek,hourWeekEnd,minuteWeekEnd;
     // String strURL = "http://api.openweathermap.org/data/2.5/weather?q=Paris&appid=288c4c3f50e07e9188bdef93c039687c";
     //****************************************************
     String newsFile = "";
@@ -152,21 +162,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         setContentView(R.layout.activity_main);
 
+        //Application des listener sur nos deux textView pour la gestion du timepicker
         WeekDaysEdit = (TextView) findViewById(R.id.WeekDays);
         WeekDaysEdit.setOnClickListener(this);
+        weekEndDaysEdit = (TextView) findViewById(R.id.WeekEndDays);
+        weekEndDaysEdit.setOnClickListener(this);
 
+        //Application du listener pour l'image settings qui va ouvrir notre activité settings
         SettingsEdit = (ImageButton) findViewById(R.id.settings_button);
         SettingsEdit.setOnClickListener(this);
 
+        //Application du listener sur notre bouton pour parler
         btnSpeak = (Button) findViewById(R.id.button_speak);
         btnSpeak.setOnClickListener(this);
         System.out.println("Passage dans OnCreate");
 
+/*
 
-        //longii.setText(Double.toString(longitude));
-        //latit.setText(Double.toString(latitude));
-        //cityText.setText(City);
-
+No more used
+        longii.setText(Double.toString(longitude));
+        latit.setText(Double.toString(latitude));
+        cityText.setText(City);
+*/
     }
 
     protected void onStart() {
@@ -186,23 +203,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         switch (view.getId()){
             case R.id.WeekDays:
-                Intent SetTimerActivity = new Intent(MainActivity.this, TimerActivity.class);
+                /*Intent SetTimerActivity = new Intent(MainActivity.this, TimerActivity.class);
                 //on passe l'intention au système
                 EditText weekDays = (EditText)findViewById(R.id.WeekDays);
                 Bundle bundle = new Bundle();
                 bundle.putString("Week", weekDays.toString());
 
                 SetTimerActivity.putExtras(bundle);
-                startActivityForResult(SetTimerActivity,1);
+                startActivityForResult(SetTimerActivity,1);*/
+                showDialog(WEEK_TIME_DIALOG_ID);
                 break;
 
             case R.id.WeekEndDays:
-
-
+                showDialog(WEEK_END_TIME_DIALOG_ID);
+/*
                 Intent SetTimerActivity2 = new Intent(MainActivity.this, TimerActivity.class);
                 //SetTimerActivity2.putExtra(EXTRA_WE_TIME,weekEnd.getText().toString());
                 //on passe l'intention au système
-                startActivity(SetTimerActivity2);
+                startActivity(SetTimerActivity2);*/
                 break;
 
             case R.id.settings_button:
@@ -542,4 +560,37 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     }
+
+    /*
+
+
+    */
+    //fonctions de gestion de l  r&cup&ration des heures
+    protected Dialog onCreateDialog(int id){
+        switch (id){
+            case WEEK_TIME_DIALOG_ID:
+                return new TimePickerDialog(this,timePickerListener1,hourWeek,minuteWeek,false);
+            case WEEK_END_TIME_DIALOG_ID:
+                return new TimePickerDialog(this, timePickerListener2,hourWeekEnd,minuteWeekEnd,false);
+        }
+        return null;
+    }
+
+    private TimePickerDialog.OnTimeSetListener timePickerListener1= new TimePickerDialog.OnTimeSetListener() {
+        @Override
+        public void onTimeSet(TimePicker view, int hourOfDay, int minuteSelected) {
+            hourWeek = hourOfDay;
+            minuteWeek = minuteSelected;
+            WeekDaysEdit.setText(hourWeek+":"+minuteWeek);
+        }
+    };
+
+    private TimePickerDialog.OnTimeSetListener timePickerListener2= new TimePickerDialog.OnTimeSetListener() {
+        @Override
+        public void onTimeSet(TimePicker view, int hourOfDay, int minuteSelected) {
+            hourWeek = hourOfDay;
+            minuteWeek = minuteSelected;
+            weekEndDaysEdit.setText(hourWeek+":"+minuteWeek);
+        }
+    };
 }
