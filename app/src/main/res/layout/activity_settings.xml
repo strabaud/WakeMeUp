@@ -10,7 +10,8 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:columnCount="1"
     android:rowCount="8"
-    tools:context="com.example.vito.wakemeup.Settings">
+    tools:context="com.example.vito.wakemeup.Settings"
+    >
 
 
 
@@ -38,7 +39,7 @@
         android:textSize="20dp"/>
 
     <EditText
-        android:ems="15"
+        android:ems="20"
         android:id="@+id/name"
         android:textColor="@android:color/holo_orange_light"
         android:layout_width="wrap_content"
@@ -47,7 +48,10 @@
         android:layout_column="0"
         android:layout_gravity="left"
         android:textSize="24dp"
-        android:focusable="false"
+        android:maxLength="25"
+        android:inputType="text"
+        android:maxLines="1"
+        android:lines="1"
         />
 
     <TextView
@@ -69,7 +73,8 @@
         android:layout_row="4"
         android:background="@android:color/holo_green_dark"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        />
     <Spinner
         android:id="@+id/spinner2"
         android:layout_gravity="left"

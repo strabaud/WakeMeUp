@@ -18,6 +18,7 @@ public class SQLiteDB extends SQLiteOpenHelper {
     // VARIABLES POUR TABLE ACTIVITES
     private static final String TABLE_ACTIVITIES = "table_activities";
     private static final String COL_ID = "ID";
+    private static final String COL_USER = "USER";
     private static final String COL_ACTIVITY1 = "ACTIVITY1";
     private static final String COL_ACTIVITY2 = "ACTIVITY2";
     private static final String COL_ACTIVITY3 = "ACTIVITY3";
@@ -33,7 +34,7 @@ public class SQLiteDB extends SQLiteOpenHelper {
 
     //STRING REQUETE CREATION HOBBIES
     private static final String CREATE_DB_HOBBIES = "CREATE TABLE IF NOT EXISTS " + TABLE_ACTIVITIES + " ("
-            + COL_ID + " INTEGER PRIMARY KEY , " + COL_ACTIVITY1 + " TEXT NOT NULL, "
+            + COL_ID + " INTEGER PRIMARY KEY , " + COL_USER + " TEXT NOT NULL, " + COL_ACTIVITY1 + " TEXT NOT NULL, "
             + COL_ACTIVITY2 + " TEXT NOT NULL, "+ COL_ACTIVITY3 + " TEXT NOT NULL );";
 
     //STRING REQUETE CREATION HEURES DORMIES

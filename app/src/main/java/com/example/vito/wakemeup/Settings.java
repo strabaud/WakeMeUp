@@ -6,12 +6,13 @@ import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.Spinner;
 
 public class Settings extends AppCompatActivity implements View.OnClickListener{
 
     private Button OkButton;
-
+    private EditText userName;
 
     // VARIABLES GESTION LISTE DES ACTIVITES
     private Spinner spinner1;
@@ -21,6 +22,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
             "CHOISIR","SPORT","METEO","ACTUALITE"
     };
     String defaultActivity="CHOISIR";
+    String defaultName="user";
     Hobbies hobbies;
     Hobbies hobbiesFromDB;
     TransactionsDB transactionsDB;
@@ -30,6 +32,12 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
+        //GEstion editText qui contient le username
+        userName = (EditText)findViewById(R.id.name);
+        userName.setOnClickListener(this);
+
+
+        //début gestion des activités Via SQLITE DB
         try {
             transactionsDB = new TransactionsDB(this);
             //ouverture db
@@ -48,13 +56,13 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
 
         if(hobbiesFromDB != null){
 
-            hobbies = new Hobbies(hobbiesFromDB.getActivity1(),hobbiesFromDB.getActivity2(),hobbiesFromDB.getActivity3());
+            hobbies = new Hobbies(hobbiesFromDB.getName(),hobbiesFromDB.getActivity1(),hobbiesFromDB.getActivity2(),hobbiesFromDB.getActivity3());
 
         }
         else{
 
-            //On cree une ligne pour tester
-            hobbies = new Hobbies("CHOISIR", "CHOISIR", "CHOISIR");
+            //On cree une ligne
+            hobbies = new Hobbies(defaultName,defaultActivity, defaultActivity, defaultActivity);
 
             //insert
             transactionsDB.insertHobbies(hobbies);
@@ -65,6 +73,8 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
 
         OkButton = (Button)findViewById(R.id.bt_Ok);
         OkButton.setOnClickListener(this);
+        //EDITTEXT USER
+        userName.setText(hobbies.getName());
 
 
         //SPINNERS
@@ -95,12 +105,22 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
 
         if(R.id.bt_Ok == view.getId())
         {
+            String user=userName.getText().toString();
+            if (user!=null){
 
-            Hobbies finalHobbies = new Hobbies(spinner1.getSelectedItem().toString(),spinner2.getSelectedItem().toString(),spinner3.getSelectedItem().toString());
+            }
+            else{
+                user=defaultName;
+            }
+            Hobbies finalHobbies = new Hobbies(user,spinner1.getSelectedItem().toString(),spinner2.getSelectedItem().toString(),spinner3.getSelectedItem().toString());
             transactionsDB.updateHobbies(1,finalHobbies);
             //Log.println(Log.INFO,"tag",hobbiesFromDB.getActivity1());
 
             this.finish();
+        }
+
+        else if (R.id.name == view.getId()){
+
         }
         else
         {

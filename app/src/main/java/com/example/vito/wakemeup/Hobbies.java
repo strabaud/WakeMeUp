@@ -9,13 +9,15 @@ package com.example.vito.wakemeup;
 public class Hobbies {
 
     private int id;
+    private String name;
     private String activity1;
     private String activity2;
     private String activity3;
 
     public Hobbies(){}
 
-    public Hobbies(String activity1, String activity2, String activity3){
+    public Hobbies(String name, String activity1, String activity2, String activity3){
+        this.name=name;
         this.activity1 = activity1;
         this.activity2 = activity2;
         this.activity3 = activity3;
@@ -29,6 +31,9 @@ public class Hobbies {
         this.id = id;
     }
 
+    //GET & SET name
+    public String getName() { return name; }
+    public void setName(String name) { this.name=name; }
 
     //GET & SET activity1
     public String getActivity1() {
@@ -55,6 +60,6 @@ public class Hobbies {
     }
 
     public String toString(){
-        return "ID : "+id+"\nActivité 1 : "+activity1+"\nActivité 2 : "+activity2+"\nActivité 3 : "+activity3;
+        return "ID : "+id+ "Username : "+name+"\nActivité 1 : "+activity1+"\nActivité 2 : "+activity2+"\nActivité 3 : "+activity3;
     }
 }

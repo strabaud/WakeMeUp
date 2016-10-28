@@ -17,12 +17,14 @@ public class TransactionsDB {
     private static final String TABLE_ACTIVITIES = "table_activities";
     private static final String COL_ID = "ID";
     private static final int NUM_COL_ID = 0;
+    private static final String COL_USER = "USER";
+    private static final int NUM_COL_USER = 1;
     private static final String COL_ACTIVITY1 = "ACTIVITY1";
-    private static final int NUM_COL_ACTIVITY1 = 1;
+    private static final int NUM_COL_ACTIVITY1 = 2;
     private static final String COL_ACTIVITY2 = "ACTIVITY2";
-    private static final int NUM_COL_ACTIVITY2 = 2;
+    private static final int NUM_COL_ACTIVITY2 = 3;
     private static final String COL_ACTIVITY3 = "ACTIVITY3";
-    private static final int NUM_COL_ACTIVITY3 = 3;
+    private static final int NUM_COL_ACTIVITY3 = 4;
 
     private SQLiteDatabase db;
 
@@ -52,6 +54,7 @@ public class TransactionsDB {
         ContentValues values = new ContentValues();
         //on lui ajoute une valeur associé à une clé (qui est le nom de la colonne dans laquelle on veut mettre la valeur)
         values.put(COL_ID,1);
+        values.put(COL_USER,hobbies.getName());
         values.put(COL_ACTIVITY1, hobbies.getActivity1());
         values.put(COL_ACTIVITY2, hobbies.getActivity2());
         values.put(COL_ACTIVITY3, hobbies.getActivity3());
@@ -59,10 +62,11 @@ public class TransactionsDB {
         return db.insert(TABLE_ACTIVITIES, null, values);
     }
 
-    public int updateHobbies(int id, Hobbies hobbies){
+    public int updateHobbies(int id,Hobbies hobbies){
         //La mise à jour d'un hobbie dans la DB fonctionne plus ou moins comme une insertion
         //il faut simple préciser quelle hobbie on doit mettre à jour grâce à l'ID
         ContentValues values = new ContentValues();
+        values.put(COL_USER,hobbies.getName());
         values.put(COL_ACTIVITY1, hobbies.getActivity1());
         values.put(COL_ACTIVITY2, hobbies.getActivity2());
         values.put(COL_ACTIVITY3, hobbies.getActivity3());
@@ -76,7 +80,7 @@ public class TransactionsDB {
 
     public Hobbies getHobbiesById(int id){
         //Récupère dans un Cursor les valeur correspondant
-        Cursor c = db.query(TABLE_ACTIVITIES, new String[] {COL_ID, COL_ACTIVITY1, COL_ACTIVITY2, COL_ACTIVITY3}, COL_ID + " LIKE \"" + id +"\"",null,null,null,null);
+        Cursor c = db.query(TABLE_ACTIVITIES, new String[] {COL_ID, COL_USER, COL_ACTIVITY1, COL_ACTIVITY2, COL_ACTIVITY3}, COL_ID + " LIKE \"" + id +"\"",null,null,null,null);
         return cursorToHobbies(c);
     }
 
@@ -92,6 +96,7 @@ public class TransactionsDB {
         Hobbies hobbies = new Hobbies();
         //on lui affecte toutes les infos grâce aux infos contenues dans le Cursor
         hobbies.setId(c.getInt(NUM_COL_ID));
+        hobbies.setName(c.getString(NUM_COL_USER));
         hobbies.setActivity1(c.getString(NUM_COL_ACTIVITY1));
         hobbies.setActivity2(c.getString(NUM_COL_ACTIVITY2));
         hobbies.setActivity3(c.getString(NUM_COL_ACTIVITY3));
