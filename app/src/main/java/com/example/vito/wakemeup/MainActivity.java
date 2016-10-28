@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Map<String, String> map = new HashMap<String, String>();
 
 
-//// GESTION DES DEPRECATED
+//// GESTION DES DEPRECATED POUR TEXT TO SPEECH
     private void tts(String string){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ttsGreater21(string);
