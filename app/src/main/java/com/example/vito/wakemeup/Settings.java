@@ -38,7 +38,8 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
 
 
         //début gestion des activités Via SQLITE DB
-        try {
+        try
+        {
             transactionsDB = new TransactionsDB(this);
             //ouverture db
             transactionsDB.open();

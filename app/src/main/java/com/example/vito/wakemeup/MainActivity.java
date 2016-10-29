@@ -2,6 +2,7 @@ package com.example.vito.wakemeup;
 
 import android.Manifest;
 import android.annotation.TargetApi;
+import android.app.AlarmManager;
 import android.app.Dialog;
 import android.app.TimePickerDialog;
 import android.content.pm.PackageManager;
@@ -67,6 +68,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ArrayList<Time> alarms;
     Button btnSpeak;
     TextToSpeech tts;
+
+    AlarmManager alarmManager;
 
     GoogleApiClient mGoogleApiClient;
     //**************************************************
@@ -141,14 +144,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+        alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+
         mGoogleApiClient = new GoogleApiClient.Builder(this, this, this).addApi(LocationServices.API).build();
-        /*if (mGoogleApiClient == null) {
-            mGoogleApiClient = new GoogleApiClient.Builder(this)
-                    .addConnectionCallbacks(this)
-                    .addOnConnectionFailedListener(this)
-                    .addApi(LocationServices.API)
-                    .build();
-        }*/
+
 
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED)
         {

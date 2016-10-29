@@ -57,15 +57,25 @@
         android:id="@+id/WeekDays"
         android:ems="15"
         android:textColor="@android:color/holo_orange_light"
-        android:layout_width="wrap_content"
+        android:layout_width="183dp"
         android:layout_height="wrap_content"
         android:layout_row="4"
         android:layout_column="0"
-        android:layout_gravity="center"
+        android:layout_gravity="left"
         android:textSize="40dp"
         android:focusable="false"
         android:text="@string/new_time"/>
 
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On/Off"
+        android:id="@+id/alarmToggle"
+        android:layout_row="4"
+        android:layout_column="1"
+        android:layout_marginLeft="0dp"
+        android:layout_gravity="left"
+        />
 
     <TextView
         android:textColor="@android:color/darker_gray"
@@ -81,7 +91,7 @@
         android:id="@+id/WeekEndDays"
         android:ems="15"
         android:textColor="@android:color/holo_orange_light"
-        android:layout_width="wrap_content"
+        android:layout_width="183dp"
         android:layout_height="wrap_content"
         android:layout_row="6"
         android:layout_column="0"
@@ -90,6 +100,16 @@
         android:focusable="false"
         android:text="@string/new_time"/>
 
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="On/Off"
+        android:id="@+id/alarmToggle2"
+        android:layout_row="6"
+        android:layout_column="1"
+        android:layout_marginLeft="0dp"
+        android:layout_gravity="left|bottom"
+        />
 
     <TextView
         android:id="@+id/longitudeTextView"
@@ -97,7 +117,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="7"
-        android:layout_column="0"
+        android:layout_columnSpan="2"
         android:text="@string/longitude"
         android:layout_gravity="center"
         android:textSize="20dp" />
@@ -108,7 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="8"
-        android:layout_column="0"
+        android:layout_columnSpan="2"
         android:text="@string/latitude"
         android:layout_gravity="center"
         android:textSize="20dp" />
@@ -119,7 +139,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_row="9"
-        android:layout_column="0"
+        android:layout_columnSpan="2"
         android:text="@string/city"
         android:layout_gravity="center"
         android:textSize="20dp" />
@@ -132,7 +152,6 @@
         android:layout_row="9"
         android:layout_columnSpan="2"
         android:layout_gravity="bottom|center"/>
-
 
 
 
