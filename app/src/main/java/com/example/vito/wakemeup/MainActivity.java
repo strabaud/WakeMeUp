@@ -4,6 +4,7 @@ import android.Manifest;
 import android.annotation.TargetApi;
 import android.app.AlarmManager;
 import android.app.Dialog;
+import android.app.PendingIntent;
 import android.app.TimePickerDialog;
 import android.content.pm.PackageManager;
 import android.location.Address;
@@ -27,6 +28,7 @@ import android.content.Intent;
 import android.widget.ImageButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
@@ -46,6 +48,7 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
@@ -69,7 +72,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Button btnSpeak;
     TextToSpeech tts;
 
+    //*********************************************
     AlarmManager alarmManager;
+    ToggleButton weekToggleButton;
+    ToggleButton weekEndToggleButton;
+    PendingIntent pendingIntent;
+    static MainActivity inst;
+
 
     GoogleApiClient mGoogleApiClient;
     //**************************************************
@@ -82,7 +91,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     // VARIABLES LOCATION & WEATHER
     TextView longii;
     TextView latit;
-    TextView cityText;
+    static TextView cityText;
+    static TextView wakeUp;
     protected LocationManager locationManager;
     protected LocationListener locationListener;
     Location mLastLocation; // location
@@ -139,11 +149,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 //////
 
+    public static MainActivity instance() {
+        return inst;
+    }
 
+    public static  TextView getWakeUpTextView(){
+        return wakeUp;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+        wakeUp = (TextView) findViewById(R.id.wakeMeUpTextView) ;
 
         alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
 
@@ -161,6 +179,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         System.out.print("Passage dans Oncreate !");
 
         setContentView(R.layout.activity_main);
+
+        weekToggleButton = (ToggleButton) findViewById(R.id.alarmToggle);
+        weekToggleButton.setOnClickListener(this);
+        weekEndToggleButton = (ToggleButton) findViewById(R.id.alarmToggle2);
+        weekEndToggleButton.setOnClickListener(this);
 
         //Application des listener sur nos deux textView pour la gestion du timepicker
         WeekDaysEdit = (TextView) findViewById(R.id.WeekDays);
@@ -233,6 +256,29 @@ No more used
                 speakOut();
                 break;
 
+            case R.id.alarmToggle:
+                //button on
+                if(weekToggleButton.isChecked())
+                {
+                    Calendar calendar = Calendar.getInstance();
+                    //regle l'heure du reveil pour la semaine
+                    calendar.set(Calendar.HOUR_OF_DAY,hourWeek);
+                    //regle les minute du reveil pour la semaine
+                    calendar.set(Calendar.MINUTE,minuteWeek);
+                    Intent myIntent = new Intent(MainActivity.this,AlarmReceiver.class);
+                    pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 0, myIntent, 0);
+                    // set alarm
+                    alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
+                }else {
+                    alarmManager.cancel(pendingIntent);
+                    //Log.d("MyActivity", "Alarm Off");
+                }
+
+                break;
+
+            case R.id.alarmToggle2:
+                break;
+
             default:
                 Log.e("Bouton", "clic pas implémenté !");
                 break;
@@ -253,7 +299,8 @@ No more used
         DisplayAlarms();
     }
 
-    public void DisplayAlarms() {
+    public void DisplayAlarms()
+    {
         System.out.print("Passage dans la fonction Display baby");
         alarms = Alarms.getInstance().getAlarms();
         Time t1 = new Time(0, 0);
@@ -429,7 +476,7 @@ No more used
                             SPEAKOUT
 
                              */
-    private void speakOut()
+    public void speakOut()
     {
         Double tempDouble = Double.valueOf(temperature);
         int tempInt = tempDouble.intValue();

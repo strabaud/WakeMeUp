@@ -19,7 +19,7 @@ public class Settings extends AppCompatActivity implements View.OnClickListener{
     private Spinner spinner2;
     private Spinner spinner3;
     String[] HobbiesList = new String[]{
-            "CHOISIR","SPORT","METEO","ACTUALITE"
+            "News","Technologies","Science","Sport"
     };
     String defaultActivity="CHOISIR";
     String defaultName="user";

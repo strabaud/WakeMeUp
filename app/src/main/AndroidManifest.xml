@@ -23,5 +23,9 @@
         </activity>
         <activity android:name=".TimerActivity"></activity>
         <activity android:name=".Settings"></activity>
+        <service
+            android:name=".AlarmService"
+            android:enabled="true" />
+        <receiver android:name=".AlarmReceiver" />
     </application>
 </manifest>
