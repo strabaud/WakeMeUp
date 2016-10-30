@@ -154,7 +154,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public static  TextView getWakeUpTextView(){
-        return wakeUp;
+        return cityText;
     }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
