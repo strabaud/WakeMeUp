@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageButton SettingsEdit;
     ArrayList<Time> alarms;
     Button btnSpeak;
-    TextToSpeech tts;
+    public static TextToSpeech tts;
 
     //*********************************************
     AlarmManager alarmManager;
@@ -98,12 +98,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Location mLastLocation; // location
     double latitude; // latitude
     double longitude; // longitude
-    String City = "";
+    static String City = "";
     String weatherFile = "a";
     String temperature = "";
     String MinTemp = "";
     String MaxTem = "";
-    String weather = "";
+    static String weather = "";
+    static String finalTemp="";
 
     //VARIABLES TIMEPICKER
     private final int WEEK_TIME_DIALOG_ID = 200;
@@ -111,10 +112,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TextView WeekDaysEdit;
     TextView weekEndDaysEdit;
     int hourWeek,minuteWeek,hourWeekEnd,minuteWeekEnd;
-    // String strURL = "http://api.openweathermap.org/data/2.5/weather?q=Paris&appid=288c4c3f50e07e9188bdef93c039687c";
+
     //****************************************************
     String newsFile = "";
-    Map<String, String> map = new HashMap<String, String>();
+    static Map<String, String> map = new HashMap<String, String>();
 
     // VARIABLES DB
 
@@ -124,14 +125,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Hobbies hobbiesFromDB;
     TransactionsDB transactionsDB;
 
-    String userName;
-    String activity1;
-    String activity2;
-    String activity3;
+    static int a;
+   static String userName;
+   static String activity1;
+   static String activity2;
+   static String activity3;
 
 
     //// GESTION DES DEPRECATED POUR TEXT TO SPEECH
-    private void tts(String string){
+    public static void tts(String string){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ttsGreater21(string);
         }
@@ -139,7 +141,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             ttsUnder20(string);
         }
     }
-    private void ttsSilence(int number){
+
+    public static void ttsSilence(int number){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             tts.playSilentUtterance(number, TextToSpeech.QUEUE_ADD, null);
         }
@@ -149,15 +152,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     @SuppressWarnings("deprecation")
-    private void ttsUnder20(String text) {
+    private static void ttsUnder20(String text) {
         HashMap<String, String> map = new HashMap<>();
         map.put(TextToSpeech.Engine.KEY_PARAM_UTTERANCE_ID, "MessageId");
         tts.speak(text, TextToSpeech.QUEUE_ADD, map);
     }
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
-    private void ttsGreater21(String text) {
-        String utteranceId=this.hashCode() + "";
+    private static void ttsGreater21(String text) {
+        String utteranceId= a + "";
         tts.speak(text, TextToSpeech.QUEUE_ADD, null, utteranceId);
     }
 //////
@@ -174,7 +177,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         super.onCreate(savedInstanceState);
 
-
+        a= this.hashCode();
         //début récupération data SQLITE DB
         try
         {
@@ -325,7 +328,7 @@ No more used
                     Intent myIntent = new Intent(MainActivity.this,AlarmReceiver.class);
                     pendingIntent = PendingIntent.getBroadcast(MainActivity.this, 0, myIntent, 0);
                     // set alarm
-                    alarmManager.set(AlarmManager.RTC, calendar.getTimeInMillis(), pendingIntent);
+                    alarmManager.set(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), pendingIntent);
                 }else {
                     alarmManager.cancel(pendingIntent);
                     //Log.d("MyActivity", "Alarm Off");
@@ -347,6 +350,19 @@ No more used
     @Override
     public void onResume() {
         super.onResume();
+
+        try {
+            hobbiesFromDB = transactionsDB.getHobbiesById(1);
+        }
+        catch (Exception e){
+
+        }
+
+        hobbies = new Hobbies(hobbiesFromDB.getName(),hobbiesFromDB.getActivity1(),hobbiesFromDB.getActivity2(),hobbiesFromDB.getActivity3());
+        userName=hobbies.getName();
+        activity1=hobbies.getActivity1();
+        activity2=hobbies.getActivity2();
+        activity3=hobbies.getActivity3();
         DisplayAlarms();
     }
 
@@ -535,9 +551,7 @@ No more used
                              */
     public void speakOut()
     {
-        Double tempDouble = Double.valueOf(temperature);
-        int tempInt = tempDouble.intValue();
-        String finalTemp = String.valueOf(tempInt);
+
         String W = weather;
         String wakeUp = "Bonjour "+userName+" c'est l'heure de te réveiller ! Actuellement, il fait " + finalTemp + " degrés dans la ville de " +City+" , et le temps est " + W;
         String newsToday ="Tu as choisi d'avoir des informations sur "+activity1+" "+activity2+" "+activity3+" Voici les nouvelles pour aujourd'hui ";
@@ -600,27 +614,30 @@ No more used
                     weatherFile = value;
 
                     /*************************************************************************************************/
-                    String UrlNews = "http://www.lemonde.fr/technologies/rss_full.xml";
-                    URL url2 = new URL(UrlNews);
-                    con = (HttpURLConnection) url2.openConnection();
-                    DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
-                    DocumentBuilder builder = factory.newDocumentBuilder();
-                    Document doc = builder.parse(con.getInputStream());
-                    NodeList nodes = doc.getElementsByTagName("item");
-                    for (int i = 0; i < nodes.getLength(); i++)
-                    {
-                        Element element = (Element) nodes.item(i);
-                        NodeList titleNode = element.getElementsByTagName("title");
-                        Element line = (Element) titleNode.item(0);
-                        String Title = line.getTextContent();
-                        //
-                        NodeList descriptionNode = element.getElementsByTagName("description");
-                        Element descriptionLine = (Element) descriptionNode.item(0);
-                        String description = descriptionLine.getTextContent();
 
-                        map.put(Title,description);
 
-                    }
+
+                            String UrlNews = "http://www.lemonde.fr/technologies/rss_full.xml";
+                            URL url2 = new URL(UrlNews);
+                            con = (HttpURLConnection) url2.openConnection();
+                            DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+                            DocumentBuilder builder = factory.newDocumentBuilder();
+                            Document doc = builder.parse(con.getInputStream());
+                            NodeList nodes = doc.getElementsByTagName("item");
+                            for (int i = 0; i < nodes.getLength(); i++) {
+                                Element element = (Element) nodes.item(i);
+                                NodeList titleNode = element.getElementsByTagName("title");
+                                Element line = (Element) titleNode.item(0);
+                                String Title = line.getTextContent();
+                                //
+                                NodeList descriptionNode = element.getElementsByTagName("description");
+                                Element descriptionLine = (Element) descriptionNode.item(0);
+                                String description = descriptionLine.getTextContent();
+
+                                map.put(Title, description);
+
+                            }
+
 
                 }
 
@@ -650,6 +667,10 @@ No more used
                 MaxTem = main.getString("temp_max");
                 JSONArray weatherObj = jObject.getJSONArray("weather");
                 JSONObject j = weatherObj.getJSONObject(0);
+
+                Double tempDouble = Double.valueOf(temperature);
+                int tempInt = tempDouble.intValue();
+                finalTemp = String.valueOf(tempInt);
 
                 weather = j.getString("description");
 
