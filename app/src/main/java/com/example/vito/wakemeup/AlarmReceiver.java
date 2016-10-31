@@ -107,13 +107,7 @@ public class AlarmReceiver extends WakefulBroadcastReceiver implements  TextToSp
                 i++;
             }
         }catch (Exception e){
-            MainActivity.getWakeUpTextView().setText(e.toString());
+
         }
-        //MainActivity.speakOut();
-        //this will send a notification message
-       /* ComponentName comp = new ComponentName(context.getPackageName(),
-                AlarmService.class.getName());
-        startWakefulService(context, (intent.setComponent(comp)));
-        setResultCode(Activity.RESULT_OK);*/
     }
 }

@@ -70,7 +70,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                                                      */
     //TextView WeekDaysEdit;
     ImageButton settingsEdit;
-    ArrayList<Time> alarms;
     Button btnSpeak;
     public static TextToSpeech tts;
     HttpURLConnection con;
@@ -116,7 +115,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int hourWeek,minuteWeek,hourWeekEnd,minuteWeekEnd;
 
     //****************************************************
-    String newsFile = "";
+    //VARIABLES DICTIONNAIRES ACTIVITES
     static Map<String, String> technoMap = new HashMap<String, String>();
     static Map<String, String> newsMap = new HashMap<String, String>();
     static Map<String, String> scienceMap = new HashMap<String, String>();
@@ -130,10 +129,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     TransactionsDB transactionsDB;
 
     static int a;
-   static String userName;
-   static String activity1;
-   static String activity2;
-   static String activity3;
+    static String userName;
+    static String activity1;
+    static String activity2;
+    static String activity3;
 
 
     //// GESTION DES DEPRECATED POUR TEXT TO SPEECH
@@ -169,13 +168,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 //////
 
-    public static MainActivity instance() {
-        return inst;
-    }
-
-    public static  TextView getWakeUpTextView(){
-        return cityText;
-    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -353,22 +345,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onRestart() {
         super.onRestart();
-        DisplayAlarms();
     }
 
-    public void DisplayAlarms()
-    {
-        System.out.print("Passage dans la fonction Display baby");
-        alarms = Alarms.getInstance().getAlarms();
-        Time t1 = new Time(0, 0);
 
-        if (alarms != null) {
-            t1 = alarms.get(0);
-            String hour = Integer.toString(t1.hour);
-            String min = Integer.toString(t1.minutes);
-            WeekDaysEdit.setText(hour + " : " + min);
-        }
-    }
 
     // init pour le textTo speech
     @Override
