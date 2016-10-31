@@ -116,8 +116,21 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     String newsFile = "";
     Map<String, String> map = new HashMap<String, String>();
 
+    // VARIABLES DB
 
-//// GESTION DES DEPRECATED POUR TEXT TO SPEECH
+    String defaultActivity="CHOISIR";
+    String defaultName="user";
+    Hobbies hobbies;
+    Hobbies hobbiesFromDB;
+    TransactionsDB transactionsDB;
+
+    String userName;
+    String activity1;
+    String activity2;
+    String activity3;
+
+
+    //// GESTION DES DEPRECATED POUR TEXT TO SPEECH
     private void tts(String string){
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             ttsGreater21(string);
@@ -160,6 +173,50 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
+
+
+        //début récupération data SQLITE DB
+        try
+        {
+            transactionsDB = new TransactionsDB(this);
+            //ouverture db
+            transactionsDB.open();
+        }
+        catch (Exception e){
+
+        }
+
+        try {
+            hobbiesFromDB = transactionsDB.getHobbiesById(1);
+        }
+        catch (Exception e){
+
+        }
+
+        if(hobbiesFromDB != null){
+
+            hobbies = new Hobbies(hobbiesFromDB.getName(),hobbiesFromDB.getActivity1(),hobbiesFromDB.getActivity2(),hobbiesFromDB.getActivity3());
+
+        }
+        else{
+
+            //On cree une ligne
+            hobbies = new Hobbies(defaultName,defaultActivity, defaultActivity, defaultActivity);
+
+            //insert
+            transactionsDB.insertHobbies(hobbies);
+
+
+        }
+
+        //Assignation données DB ACTIVITY a nos variables
+        userName=hobbies.getName();
+        activity1=hobbies.getActivity1();
+        activity2=hobbies.getActivity2();
+        activity3=hobbies.getActivity3();
+        //FIN DB SQLITE
+
+
 
         wakeUp = (TextView) findViewById(R.id.wakeMeUpTextView) ;
 
@@ -482,8 +539,8 @@ No more used
         int tempInt = tempDouble.intValue();
         String finalTemp = String.valueOf(tempInt);
         String W = weather;
-        String wakeUp = "Bonjour sylvain ! c'est l'heure de te réveiller ! Actuellement, il fait " + finalTemp + " degrés dans la ville de " +City+" , et le temps est " + W;
-        String newsToday ="Voici les nouvelles pour aujourd'hui ";
+        String wakeUp = "Bonjour "+userName+" c'est l'heure de te réveiller ! Actuellement, il fait " + finalTemp + " degrés dans la ville de " +City+" , et le temps est " + W;
+        String newsToday ="Tu as choisi d'avoir des informations sur "+activity1+" "+activity2+" "+activity3+" Voici les nouvelles pour aujourd'hui ";
         String title = "Titre de l'article ";
         String description = "Description ";
         int averageWaitingTime=1000;
