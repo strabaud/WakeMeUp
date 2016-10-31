@@ -49,22 +49,6 @@ public class AlarmReceiver extends WakefulBroadcastReceiver implements  TextToSp
     public void onReceive(final Context context, Intent intent) {
 
 
-            /*
-            int result = tts.setLanguage(Locale.FRANCE);
-
-            if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
-                Log.e("TTS", "This Language is not supported");
-            } else {
-
-
-            }
-            */
-        //this will update the UI with message
-       // MainActivity inst = MainActivity.instance();
-        // apelle la fonction qui annonce la meteo et les news
-        //inst.speakOut();
-
-
         try
         {
             String wakeUp = "Bonjour "+MainActivity.userName+" c'est l'heure de te réveiller ! Actuellement, il fait " + MainActivity.finalTemp + " degrés dans la ville de " +MainActivity.City+" , et le temps est "+MainActivity.weather;
