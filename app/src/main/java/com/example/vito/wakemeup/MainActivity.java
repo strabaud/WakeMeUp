@@ -46,6 +46,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -53,6 +54,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Locale;
 import java.util.Map;
+import java.util.Objects;
 
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
@@ -67,11 +69,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
                                                      */
     //TextView WeekDaysEdit;
-    ImageButton SettingsEdit;
+    ImageButton settingsEdit;
     ArrayList<Time> alarms;
     Button btnSpeak;
     public static TextToSpeech tts;
-
+    HttpURLConnection con;
     //*********************************************
     AlarmManager alarmManager;
     ToggleButton weekToggleButton;
@@ -115,8 +117,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     //****************************************************
     String newsFile = "";
-    static Map<String, String> map = new HashMap<String, String>();
-
+    static Map<String, String> technoMap = new HashMap<String, String>();
+    static Map<String, String> newsMap = new HashMap<String, String>();
+    static Map<String, String> scienceMap = new HashMap<String, String>();
+    static Map<String, String> sportMap = new HashMap<String, String>();
     // VARIABLES DB
 
     String defaultActivity="CHOISIR";
@@ -252,21 +256,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         weekEndDaysEdit.setOnClickListener(this);
 
         //Application du listener pour l'image settings qui va ouvrir notre activité settings
-        SettingsEdit = (ImageButton) findViewById(R.id.settings_button);
-        SettingsEdit.setOnClickListener(this);
+        settingsEdit = (ImageButton) findViewById(R.id.settings_button);
+        settingsEdit.setOnClickListener(this);
 
         //Application du listener sur notre bouton pour parler
         btnSpeak = (Button) findViewById(R.id.button_speak);
         btnSpeak.setOnClickListener(this);
         System.out.println("Passage dans OnCreate");
 
-/*
-
-No more used
-        longii.setText(Double.toString(longitude));
-        latit.setText(Double.toString(latitude));
-        cityText.setText(City);
-*/
     }
 
     protected void onStart() {
@@ -286,24 +283,11 @@ No more used
 
         switch (view.getId()){
             case R.id.WeekDays:
-                /*Intent SetTimerActivity = new Intent(MainActivity.this, TimerActivity.class);
-                //on passe l'intention au système
-                EditText weekDays = (EditText)findViewById(R.id.WeekDays);
-                Bundle bundle = new Bundle();
-                bundle.putString("Week", weekDays.toString());
-
-                SetTimerActivity.putExtras(bundle);
-                startActivityForResult(SetTimerActivity,1);*/
                 showDialog(WEEK_TIME_DIALOG_ID);
                 break;
 
             case R.id.WeekEndDays:
                 showDialog(WEEK_END_TIME_DIALOG_ID);
-/*
-                Intent SetTimerActivity2 = new Intent(MainActivity.this, TimerActivity.class);
-                //SetTimerActivity2.putExtra(EXTRA_WE_TIME,weekEnd.getText().toString());
-                //on passe l'intention au système
-                startActivity(SetTimerActivity2);*/
                 break;
 
             case R.id.settings_button:
@@ -363,7 +347,7 @@ No more used
         activity1=hobbies.getActivity1();
         activity2=hobbies.getActivity2();
         activity3=hobbies.getActivity3();
-        DisplayAlarms();
+
     }
 
     @Override
@@ -472,7 +456,6 @@ No more used
             longii.setText("Longitude : "+Double.toString(longitude));
             latit.setText("Latitude : "+Double.toString(latitude));
 
-
             Geocoder geocoder = new Geocoder(this, Locale.getDefault());
             try
             {
@@ -505,8 +488,7 @@ No more used
             {
                 e.printStackTrace();
             }
-            //String url = String.format("http://api.openweathermap.org/data/2.5/weather?lat=%f&lon=%f&units=%s&appid=%s", lat, lon, units, APP_ID);
-            //new GetWeatherTask(textView).execute(url);
+
         }
 
     }
@@ -560,11 +542,6 @@ No more used
         int averageWaitingTime=1000;
         int shortWaintingTime=500;
 
-        /*
-        A VOIR SI ON UTILISE OU PAS
-        //Voice v1 = tts.getVoice();
-        //String name = v1.getName();
-         */
 
 
 /// Watch deprecated functions after VARIABLES DECLARATIONS to understand those functions
@@ -574,7 +551,7 @@ No more used
         ttsSilence(averageWaitingTime);
 
         int i =1;
-        for (Map.Entry<String, String> entry : map.entrySet()) // getKey() de entry permet d'avoir
+        for (Map.Entry<String, String> entry : technoMap.entrySet()) // getKey() de entry permet d'avoir
         {
             // TITRE
             tts(title +" "+Integer.toString(i));
@@ -606,7 +583,7 @@ No more used
 
                     String UrlWeather ="http://api.openweathermap.org/data/2.5/weather?q="+City+"&units=metric&lang=fr&appid=288c4c3f50e07e9188bdef93c039687c";
                     URL url = new URL(UrlWeather);
-                    HttpURLConnection con = (HttpURLConnection) url.openConnection();
+                    con = (HttpURLConnection) url.openConnection();
                     con.setRequestMethod("GET");
                     con.connect();
                     BufferedReader bf = new BufferedReader(new InputStreamReader(con.getInputStream()));
@@ -614,9 +591,9 @@ No more used
                     weatherFile = value;
 
                     /*************************************************************************************************/
-
-
-
+                        // pour les activités concernant les technologies
+                        if(Objects.equals(activity1, "Technologies")||Objects.equals(activity2, "Technologies")||Objects.equals(activity3, "Technologies"))
+                        {
                             String UrlNews = "http://www.lemonde.fr/technologies/rss_full.xml";
                             URL url2 = new URL(UrlNews);
                             con = (HttpURLConnection) url2.openConnection();
@@ -634,9 +611,65 @@ No more used
                                 Element descriptionLine = (Element) descriptionNode.item(0);
                                 String description = descriptionLine.getTextContent();
 
-                                map.put(Title, description);
+                                technoMap.put(Title, description);
 
+                                if(i==5){
+                                    break;
+                                }
                             }
+                        }
+                    // pour les activités concernant la science
+                    if(Objects.equals(activity1, "Science")||Objects.equals(activity2, "Science")||Objects.equals(activity3, "Science"))
+                    {
+                        String UrlNews = "http://www.lemonde.fr/sciences/rss_full.xml";
+                        URL url2 = new URL(UrlNews);
+                        con = (HttpURLConnection) url2.openConnection();
+                        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+                        DocumentBuilder builder = factory.newDocumentBuilder();
+                        Document doc = builder.parse(con.getInputStream());
+                        NodeList nodes = doc.getElementsByTagName("item");
+                        for (int i = 0; i < nodes.getLength(); i++) {
+                            Element element = (Element) nodes.item(i);
+                            NodeList titleNode = element.getElementsByTagName("title");
+                            Element line = (Element) titleNode.item(0);
+                            String Title = line.getTextContent();
+                            //
+                            NodeList descriptionNode = element.getElementsByTagName("description");
+                            Element descriptionLine = (Element) descriptionNode.item(0);
+                            String description = descriptionLine.getTextContent();
+
+                            scienceMap.put(Title, description);
+                            if(i==5){
+                                break;
+                            }
+                        }
+                    }
+                    // pour les activités concernant le news
+                    if(Objects.equals(activity1, "News")||Objects.equals(activity2, "News")||Objects.equals(activity3, "News"))
+                    {
+                        String UrlNews = "http://www.lemonde.fr/rss/une.xml";
+                        URL url2 = new URL(UrlNews);
+                        con = (HttpURLConnection) url2.openConnection();
+                        DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+                        DocumentBuilder builder = factory.newDocumentBuilder();
+                        Document doc = builder.parse(con.getInputStream());
+                        NodeList nodes = doc.getElementsByTagName("item");
+                        for (int i = 0; i < nodes.getLength(); i++) {
+                            Element element = (Element) nodes.item(i);
+                            NodeList titleNode = element.getElementsByTagName("title");
+                            Element line = (Element) titleNode.item(0);
+                            String Title = line.getTextContent();
+                            //
+                            NodeList descriptionNode = element.getElementsByTagName("description");
+                            Element descriptionLine = (Element) descriptionNode.item(0);
+                            String description = descriptionLine.getTextContent();
+
+                            newsMap.put(Title, description);
+                            if(i==5){
+                                break;
+                            }
+                        }
+                    }
 
 
                 }
